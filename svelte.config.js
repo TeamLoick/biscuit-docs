@@ -13,11 +13,12 @@ const config = {
 
     kit: {
 		prerender: {
-			default: true
+			default: true,
+			entries: []
 		},
         adapter: adapter({
-			pages: 'build',
-			assets: 'build',
+			pages: 'docs',
+			assets: 'docs',
 			fallback: null,
 			precompress: false
         }),
