@@ -106,7 +106,46 @@
 		</header>
 
 		<div>
-			<p>A brand new bleeding edge non bloated Discord library.</p>
+			<p>
+				The biscuit Discord library is built ontop of Discordeno and webspec APIs, we aim to provide portability. 
+			</p>
+
+			<div>
+				<h2 class="font-display text-2xl mt-5 tracking-tight text-slate-900 dark:text-white">
+					Installation (for <a href="https://nodejs.org/en/download/" target="_blank" class="font-bold">node 18.+</a>)
+				</h2>
+
+				<p>
+					<blockquote class="relative p-4 text-lg mt-2 italic border-l-4 bg-neutral-100 text-blue-600 border-blue-400 quote">
+						<p>
+							npm install @oasisjs/biscuit
+						</p>
+
+						<p>
+							pnpm add @oasisjs/biscuit
+						</p>
+
+						<p>
+							yarn add @oasisjs/biscuit
+						</p>
+					</blockquote>
+			</div>
+
+			<div>
+				<h2 class="font-display text-2xl mt-5 tracking-tight text-slate-900 dark:text-white">
+					Why biscuit?
+				</h2>
+
+				<p>
+					<ul class="list-disc">
+						<li><a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank">Minimal</a>, non feature-rich!</li>
+						<li>Crossplatform</li>
+						<li>Consistent</li>
+						<li>Performant</li>
+						<li>Small bundles</li>
+					</ul>
+
+			</div>
 		</div>
 	</article>
 </div>

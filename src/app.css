@@ -26,5 +26,9 @@
 	src: url('/biscuit-web/fonts/Inter-italic.var.woff2') format('woff2');
 }
 
+a {
+	color: #168be3;
+}
+
 @tailwind components;
 @tailwind utilities;
