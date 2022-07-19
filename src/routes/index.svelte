@@ -2,6 +2,10 @@
 	import { base } from '$app/paths';
 </script>
 
+<head>
+	<title>Biscuit</title>
+</head>
+
 <div class="relative mx-auto grid grid-cols-1 grid-rows-1 gap-20">
 	<div class="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
 		<h1 class="text-6xl mt-7 px-7 font-bold">

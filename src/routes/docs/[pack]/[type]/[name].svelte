@@ -25,6 +25,10 @@
 	}
 </script>
 
+<head>
+	<title> Documentation - Biscuit</title>
+</head>
+
 <div class="hidden lg:relative lg:block lg:flex-none">
 	<div class="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
 
