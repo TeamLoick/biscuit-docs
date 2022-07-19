@@ -1,7 +1,7 @@
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
 
-let dev = process.env.NODE_ENV === 'production';
+let prod = process.env.NODE_ENV === 'production';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -22,7 +22,7 @@ const config = {
 			precompress: false,
 		}),
 		paths: {
-			base: dev ? '/biscuit-web' : '',
+			base: prod ? '/biscuit-web' : '',
 		},
 	},
 };
