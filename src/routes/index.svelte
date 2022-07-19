@@ -16,7 +16,7 @@
 	</div>
 
 	<div class="relative mx-auto place-self-center">
-		<a href={base+'/docs'}>
+		<a href="{base}/docs">
 			<button class="bg-transparent hover:bg-sky-500 text-sky-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
 				Documentation
 			</button>
