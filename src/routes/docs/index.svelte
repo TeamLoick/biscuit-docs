@@ -1,5 +1,6 @@
 <script>
 	import { packageName } from '$root/utils/docs';
+	import { base } from '$app/paths';
 
 	export let functions = [];
 	export let classes = [];
@@ -55,7 +56,7 @@
 							<li class="relative">
 								<a
 									class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-									href={`/docs/${pack}/function/${f.name}`}
+									href={`${base}/docs/${pack}/function/${f.name}`}
 									>{f.name}
 								</a>
 							</li>
@@ -79,7 +80,7 @@
 							<li class="relative">
 								<a
 									class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-									href={`/docs/${pack}/class/${c.name}`}
+									href={`${base}/docs/${pack}/class/${c.name}`}
 									>{c.name}
 								</a>
 							</li>
