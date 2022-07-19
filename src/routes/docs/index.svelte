@@ -37,7 +37,7 @@
 					>
 						<li class="relative">
 							<span
-								class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+								class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-nova-500 before:bg-nova-500"
 							>
 								Introduction
 							</span>
@@ -101,7 +101,7 @@
 >
 	<article>
 		<header class="mb-9 space-y-1">
-			<p class="font-display text-sm font-medium text-sky-500">biscuit</p>
+			<p class="font-display text-sm font-medium text-nova-600">biscuit</p>
 			<h1
 				class="font-display text-3xl tracking-tight text-slate-900 dark:text-white"
 			>
@@ -116,11 +116,11 @@
 
 			<div>
 				<h2 class="font-display text-2xl mt-5 tracking-tight text-slate-900 dark:text-white">
-					Installation (for <a href="https://nodejs.org/en/download/" target="_blank" class="font-bold">node 18.+</a>)
+					Installation (for <a href="https://nodejs.org/en/download/" target="_blank" class="font-bold text-nova-500">node 18.+</a>)
 				</h2>
 
 				<p>
-					<blockquote class="relative p-4 text-lg mt-2 italic border-l-4 bg-neutral-100 text-blue-600 border-blue-400 quote">
+					<blockquote class="relative p-4 text-lg mt-2 italic border-l-4 bg-neutral-100 text-nova-600 border-nova-500 quote">
 						<p>
 							npm install @oasisjs/biscuit
 						</p>
@@ -142,7 +142,7 @@
 
 				<p>
 					<ul class="list-disc">
-						<li><a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank">Minimal</a>, non feature-rich!</li>
+						<li><a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank" class="text-nova-500">Minimal</a>, non feature-rich!</li>
 						<li>Crossplatform</li>
 						<li>Consistent</li>
 						<li>Performant</li>

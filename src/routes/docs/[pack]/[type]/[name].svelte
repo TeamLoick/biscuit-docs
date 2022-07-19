@@ -80,7 +80,7 @@
 							{#if content.name == f.name}
 								<li class="relative">
 									<span
-										class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+										class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-nova-500 before:bg-nova-500"
 									>
 										{f.name}
 									</span>
@@ -115,7 +115,7 @@
 							{#if content.name == c.name}
 								<li class="relative">
 									<span
-										class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+										class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-nova-500 before:bg-nova-500"
 									>
 										{c.name}
 									</span>
@@ -143,7 +143,7 @@
 >
 	<article>
 		<header class="mb-9 space-y-1">
-			<p class="font-display text-sm font-medium text-sky-500">
+			<p class="font-display text-sm font-medium text-nova-600">
 				{type}
 			</p>
 			<h1
@@ -163,7 +163,7 @@
 			{/if}
 		</header>
 
-		<span class="h-3.5 w-px bg-sky-600/20">
+		<span class="h-3.5 w-px bg-nova-600/20">
 			<a
 				class="m-2 text-base font-medium tracking-tight"
 				href={locationUrl(content.location)}>Github</a
@@ -235,14 +235,14 @@
 										<div class="flex space-x-2">
 											{#if property.readonly}
 												<span
-													class="font-mono text-sm leading-7 text-sky-500"
+													class="font-mono text-sm leading-7 text-nova-500"
 													>[readonly]</span
 												>
 											{/if}
 
 											{#if property.optional}
 												<span
-													class="font-mono text-sm leading-7 text-sky-500"
+													class="font-mono text-sm leading-7 text-nova-500"
 													>[optional]</span
 												>
 											{/if}
@@ -282,7 +282,7 @@
 										>
 
 										<a
-											class="flex items-center text-sm font-bold leading-6 text-sky-500 hover:text-sky-700 active:text-sky-900"
+											class="flex items-center text-sm font-bold leading-6 text-nova-500 hover:text-nova-600 active:text-nova-700"
 											aria-label="Show notes for episode 2: Hank Scorpio"
 											href={locationUrl(
 												property.location
@@ -322,7 +322,7 @@
 										<div class="flex space-x-2">
 											{#if method.optional}
 												<span
-													class="font-mono text-sm leading-7 text-sky-500"
+													class="font-mono text-sm leading-7 text-nova-500"
 													>[optional]</span
 												>
 											{/if}
@@ -352,7 +352,7 @@
 									>
 
 									<a
-										class="flex items-center text-sm font-bold leading-6 text-sky-500 hover:text-sky-700 active:text-sky-900"
+										class="flex items-center text-sm font-bold leading-6 text-nova-500 hover:text-nova-600 active:text-nova-700"
 										aria-label="Show notes for episode 2: Hank Scorpio"
 										href={locationUrl(method.location)}
 										>Github

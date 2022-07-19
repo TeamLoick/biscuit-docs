@@ -12,15 +12,15 @@
 			Biscuit
 		</h1>
 	</div>
-	<div class="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
-		<h2 class="text-2xl font-medium">
+	<div class="subtitle-box relative mx-auto flex max-w justify-center sm:px-2 lg:px-8 xl:px-12">
+		<h2 class="subtitle text-2xl font-medium text-nova-600">
 			A brand new bleeding edge non bloated Discord library
 		</h2>
 	</div>
 
 	<div class="relative mx-auto place-self-center">
 		<a href={`${base}/docs`}>
-			<button class="bg-transparent hover:bg-sky-500 text-sky-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+			<button class="bg-transparent hover:bg-nova-500 text-nova-500 font-semibold hover:text-white py-2 px-4 border border-nova-500 hover:border-transparent rounded">
 				Documentation
 			</button>
 		</a>

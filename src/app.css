@@ -26,8 +26,22 @@
 	src: url('/biscuit-web/fonts/Inter-italic.var.woff2') format('woff2');
 }
 
-a {
-	color: #168be3;
+body {
+	animation: opacity 1s ease-in-out;
+}
+
+.subtitle {
+	animation: opacity 3s ease-in-out;
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 @tailwind components;

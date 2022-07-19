@@ -1,4 +1,5 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -29,6 +30,36 @@ module.exports = {
         '8xl': '88rem',
       },
     },
+
+    colors: {
+      ...colors,
+      
+      'yurh': {
+        '50': '#8CF5D2',
+        '100': '#79F3CB',
+        '200': '#53F0BC',
+        '300': '#2EEDAE',
+        '400': '#13DF9B',
+        '500': '#10B981',
+        '600': '#0C855D',
+        '700': '#075239',
+        '800': '#031E15',
+        '900': '#000000'
+      },
+      
+      'nova': {
+        '50': '#91F3E8',
+        '100': '#7EF1E4',
+        '200': '#59EDDD',
+        '300': '#35E9D5',
+        '400': '#18DDC7',
+        '500': '#14B8A6',
+        '600': '#0F8578',
+        '700': '#09534B',
+        '800': '#04201D',
+        '900': '#000000'
+      },
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),
