@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-d1d9a8f3.js",
+    "file": "immutable/start-a22560b1.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -24,7 +24,7 @@
       "_index-67f76a52.js"
     ],
     "css": [
-      "immutable/assets/__layout-2a88b7c0.css"
+      "immutable/assets/__layout-fc5ec0f1.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -77,7 +77,7 @@
     "file": "immutable/chunks/docs-a936db8f.js"
   },
   "src/routes\\__layout.css": {
-    "file": "immutable/assets/__layout-2a88b7c0.css",
+    "file": "immutable/assets/__layout-fc5ec0f1.css",
     "src": "src/routes\\__layout.css"
   }
 }
