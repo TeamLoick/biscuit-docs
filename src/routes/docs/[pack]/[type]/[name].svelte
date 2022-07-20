@@ -45,93 +45,114 @@
 		<nav class="text-base lg:text-sm w-64 pr-8 xl:w-72 xl:pr-16">
 			<ul class="space-y-9">
 				<li>
-					<h2
-						class="font-display font-medium text-slate-900 dark:text-white"
-					>
-						General
-					</h2>
-
-					<ul
-						class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
-					>
-						<li class="relative">
-							<a
-								class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-								href={`${base}/docs`} 
+					<details open>
+						<summary class="list-none w-full cursor-pointer">
+							<span class="open-icon">-</span><span
+								class="closed-icon">+</span
 							>
-								Introduction
-							</a>
-						</li>
-					</ul>
+							<h2
+								class="font-display font-medium text-slate-900 dark:text-white"
+							>
+								General
+							</h2>
+						</summary>
+
+						<ul
+							class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
+						>
+							<li class="relative">
+								<a
+									class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
+									href={`${base}/docs`}
+								>
+									Introduction
+								</a>
+							</li>
+						</ul>
+					</details>
 				</li>
 				<li>
-					<h2
-						class="font-display font-medium text-slate-900 dark:text-white"
-					>
-						Functions
-					</h2>
+					<details open>
+						<summary class="list-none w-full cursor-pointer">
+							<span class="open-icon">-</span><span
+								class="closed-icon">+</span
+							>
+							<h2
+								class="font-display font-medium text-slate-900 dark:text-white"
+							>
+								Functions
+							</h2>
+						</summary>
 
-					<ul
-						class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
-					>
-						{#each functions as f}
-							{@const pack = packageName(f.location)}
+						<ul
+							class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
+						>
+							{#each functions as f}
+								{@const pack = packageName(f.location)}
 
-							{#if content.name == f.name}
-								<li class="relative">
-									<span
-										class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-nova-500 before:bg-nova-500"
-									>
-										{f.name}
-									</span>
-								</li>
-							{:else}
-								<li class="relative">
-									<a
-										class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-										href={`${base}/docs/${pack}/function/${f.name}`}
-									>
-										{f.name}
-									</a>
-								</li>
-							{/if}
-						{/each}
-					</ul>
+								{#if content.name == f.name}
+									<li class="relative">
+										<span
+											class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-nova-500 before:bg-nova-500"
+										>
+											{f.name}
+										</span>
+									</li>
+								{:else}
+									<li class="relative">
+										<a
+											class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
+											href={`${base}/docs/${pack}/function/${f.name}`}
+										>
+											{f.name}
+										</a>
+									</li>
+								{/if}
+							{/each}
+						</ul>
+					</details>
 				</li>
 
 				<li>
-					<h2
-						class="font-display font-medium text-slate-900 dark:text-white"
-					>
-						Classes
-					</h2>
+					<details open>
+						<summary class="list-none w-full cursor-pointer">
+							<span class="open-icon">-</span><span
+								class="closed-icon">+</span
+							>
+							<h2
+								class="font-display font-medium text-slate-900 dark:text-white"
+							>
+								Classes
+							</h2>
+						</summary>
 
-					<ul
-						class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
-					>
-						{#each classes as c}
-							{@const pack = packageName(c.location)}
+						<ul
+							class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
+						>
+							{#each classes as c}
+								{@const pack = packageName(c.location)}
 
-							{#if content.name == c.name}
-								<li class="relative">
-									<span
-										class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-nova-500 before:bg-nova-500"
-									>
-										{c.name}
-									</span>
-								</li>
-							{:else}
-								<li class="relative">
-									<a
-										class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-										href={`${base}/docs/${pack}/class/${c.name}`}
-									>
-										{c.name}
-									</a>
-								</li>
-							{/if}
-						{/each}
-					</ul>
+								{#if content.name == c.name}
+									<li class="relative">
+										<span
+											class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-nova-500 before:bg-nova-500"
+										>
+											{c.name}
+										</span>
+									</li>
+								{:else}
+									<li class="relative">
+										<a
+											class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
+											href={`${base}/docs/${pack}/class/${c.name}`}
+										>
+											{c.name}
+										</a>
+									</li>
+								{/if}
+							{/each}
+						</ul>
+					</details>
 				</li>
 			</ul>
 		</nav>

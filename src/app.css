@@ -44,5 +44,39 @@ body {
 	}
 }
 
+details summary {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+details summary h2 {
+	display: inline-block;
+	margin-left: 0.2rem;
+}
+
+details summary span {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	color: #7c7c7c;
+}
+
+details[open] summary .open-icon {
+	display: inline-block;
+}
+
+details summary .open-icon {
+	display: none;
+}
+
+details summary .closed-icon {
+	display: inline-block;
+}
+
+details[open] summary .closed-icon {
+	display: none;
+}
+
 @tailwind components;
 @tailwind utilities;
