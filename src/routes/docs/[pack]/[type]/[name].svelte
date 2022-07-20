@@ -329,7 +329,7 @@
 												)}
 												<a
 													class="text-yurh-500 hover:text-yurh-600 active:text-yurh-700 text-xl"
-													href={`${base}/docs/${pack}/class/${c.name}`}
+													href={`${base}/docs/${pack}/${c.kind}/${c.name}`}
 												>
 													{c.name}
 												</a>
@@ -427,7 +427,7 @@
 											)}
 											<a
 												class="text-yurh-500 hover:text-yurh-600 active:text-yurh-700 text-xl"
-												href={`${base}/docs/${pack}/class/${c.name}`}
+												href={`${base}/docs/${pack}/${c.kind}/${c.name}`}
 											>
 												{c.name}
 											</a>
@@ -519,7 +519,7 @@
 								{@const pack = packageName(c.location)}
 								<a
 									class="underline text-yurh-500 hover:text-yurh-600 active:text-yurh-700 text-xl"
-									href={`${base}/docs/${pack}/class/${c.name}`}
+									href={`${base}/docs/${pack}/${c.kind}/${c.name}`}
 								>
 									{c.name}
 								</a>
