@@ -1,10 +1,10 @@
 <script>
-	import { packageName, locationUrl, ParseType } from '$root/utils/docs';
+	import { packageName, locationUrl, ParseType, getTypeWithURL } from '$root/utils/docs';
 	import { base } from '$app/paths';
 
 	export let functions = [];
 	export let classes = [];
-	export let allDocs = [];
+	export let docs = [];
 
 	export let content = [];
 	export let type = [];
@@ -283,14 +283,13 @@
 										</div>
 
 										<h2
-											class="mt-2 text-lg font-bold text-slate-900"
+											class="mt-2 text-lg font-normal text-slate-900"
 										>
-											<a href={`#${property.name}`}>
-												{property.name}
-											</a>:
-											<span class="text-lg text-red-400">
+											<span class="text-nova-600 font-mono text-xs">{content.name}.</span><a class="no-underline" href={`#${property.name}`}>
+												{property.name}</a>:
+											<span class="text-lg text-yurh-400">
 												{#if property.tsType}
-													{ParseType(property.tsType)}
+													{@html getTypeWithURL(ParseType(property.tsType), docs, base)}
 												{/if}
 											</span>
 										</h2>
@@ -317,24 +316,6 @@
 										{property.jsDoc?.doc
 											? property.jsDoc?.doc
 											: ''}
-									</div>
-
-									<div
-										class="mt-2 text-lg text-justify flex items-center gap-4 text-justify text-sm"
-									>
-										{#each allDocs as c}
-											{#if ParseType(property.tsType).includes(c.name)}
-												{@const pack = packageName(
-													c.location
-												)}
-												<a
-													class="text-yurh-500 hover:text-yurh-600 active:text-yurh-700 text-xl"
-													href={`${base}/docs/${pack}/${c.kind}/${c.name}`}
-												>
-													{c.name}
-												</a>
-											{/if}
-										{/each}
 									</div>
 								</div>
 							</article>
@@ -368,7 +349,7 @@
 										</div>
 
 										<h2
-											class="mt-2 text-lg text-slate-900"
+											class="mt-2 text-lg text-slate-900 font-normal"
 										>
 											<span
 												class="text-nova-500 no-underline text-xs leading-6 pr-2 py-2 font-mono"
@@ -377,19 +358,15 @@
 													: ''}{method.kind ===
 												'getter'
 													? '[get]'
-													: ''}</span
-											>
-											<a class="no-underline font-normal" href={`#${method.name}`}
+													: ''}</span>
+											<a href="#" class="no-underline text-nova-600 hover:text-nova-700 font-mono text-xs font-normal">{content.name}.</a><a class="no-underline font-normal" href={`#${method.name}`}
 												>{method.name}<span>({@html method.functionDef.params && method.functionDef.params.length > 0 
-												? method.functionDef.params.map(p => `<span class="text-nova-600">${ParseType(p.tsType)}</span>`).join(', ') 
+												? method.functionDef.params.map(p => getTypeWithURL(ParseType(p), docs, base)).join(', ') 
 												: ''})</span></a
 											>:
-											<span class="text-lg text-red-400">
-												{method.functionDef
-													? ParseType(
-															method.functionDef
-																.returnType
-													  )
+											<span class="text-lg text-yurh-500 font-normal">
+												{@html method.functionDef
+													? getTypeWithURL(ParseType(method.functionDef.returnType), docs, base)
 													: ''}
 											</span>
 										</h2>
@@ -417,23 +394,6 @@
 									{method.jsDoc?.doc ? method.jsDoc?.doc : ''}
 								</div>
 
-								<div
-									class="mt-2 text-lg text-justify flex items-center gap-4 text-justify text-sm"
-								>
-									{#each allDocs as c}
-										{#if ParseType(method.functionDef.returnType).includes(c.name)}
-											{@const pack = packageName(
-												c.location
-											)}
-											<a
-												class="text-yurh-500 hover:text-yurh-600 active:text-yurh-700 text-xl"
-												href={`${base}/docs/${pack}/${c.kind}/${c.name}`}
-											>
-												{c.name}
-											</a>
-										{/if}
-									{/each}
-								</div>
 							</article>
 						{/each}
 					</div>
@@ -486,12 +446,10 @@
 									{#if param.tsType}
 										<td
 											class="py-2 pl-2 font-mono text-xs leading-6 text-indigo-600 whitespace-pre dark:text-indigo-300"
-										>
-											{param.tsType.kind}
-											<span>&lt;</span><span
+										><span
 												class="text-sm"
-												>{ParseType(param.tsType)}</span
-											><span>&gt;</span>
+												>{@html getTypeWithURL(ParseType(param.tsType), docs, base)}</span
+											>
 										</td>
 									{/if}
 									<td
@@ -509,24 +467,6 @@
 						class="sticky bottom-0 h-px -mt-px bg-slate-200 dark:bg-slate-400/20"
 					/>
 				</div>
-
-				{#each params as param}
-					<div
-						class="mt-2 text-lg text-justify flex items-center gap-4 text-justify text-sm"
-					>
-						{#each allDocs as c}
-							{#if ParseType(param.tsType).includes(c.name)}
-								{@const pack = packageName(c.location)}
-								<a
-									class="underline text-yurh-500 hover:text-yurh-600 active:text-yurh-700 text-xl"
-									href={`${base}/docs/${pack}/${c.kind}/${c.name}`}
-								>
-									{c.name}
-								</a>
-							{/if}
-						{/each}
-					</div>
-				{/each}
 			{/if}
 		</div>
 	</article>

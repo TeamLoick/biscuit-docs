@@ -14,7 +14,7 @@ export const GET = async () => {
 	}
 	);
 
-	let allDocs = [...classes, ...functions];
+	const docs = [...classes, ...functions];
 
 	return {
 		headers: { 'Content-Type': 'application/json' },
@@ -22,7 +22,7 @@ export const GET = async () => {
 		body: {
 			functions,
 			classes,
-			allDocs,
+			docs,
 		},
 	};
 };

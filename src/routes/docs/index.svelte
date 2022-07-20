@@ -4,6 +4,7 @@
 
 	export let functions = [];
 	export let classes = [];
+	export const docs = [];
 </script>
 
 <head>
