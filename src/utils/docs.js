@@ -66,12 +66,17 @@ export const ParseType = (tsType) => {
 		case 'object':
 			return `{ ${tsType.props[0].key}: ${ParseType(tsType.tsType)} }`;
 
+		case 'typePredicate':
+			return tsType.repr;
+
 		default:
 			return tsType?.repr || "void";
 	}
 }
 
 export function getTypeWithURL(typeExpression, docs, base) {
+	typeExpression = typeExpression.replaceAll('<', '&#60;').replaceAll('>', '&#62;');
+
 	for (let i = 0; i < docs.length; i++) {
 		const doc = docs[i];
 
