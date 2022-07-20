@@ -76,7 +76,6 @@ export function getTypeWithURL(typeExpression, docs, base) {
 		const doc = docs[i];
 
 		if (strictMatch(typeExpression, doc.name)) {
-			console.log(typeExpression, doc.name);
 			const references = Array.from(typeExpression.matchAll(doc.name));
 
 			for (const j in references) {
