@@ -287,7 +287,7 @@
 										>
 											<span class="text-nova-600 font-mono text-xs">{content.name}.</span><a class="no-underline" href={`#${property.name}`}>
 												{property.name}</a>:
-											<span class="text-lg text-yurh-600">
+											<span class="text-lg text-yurh-400">
 												{#if property.tsType}
 													{@html getTypeWithURL(ParseType(property.tsType), docs, base)}
 												{/if}
@@ -359,12 +359,12 @@
 												'getter'
 													? '[get]'
 													: ''}</span>
-											<a href="#" class="no-underline text-yurh-600 hover:text-yurh-700 font-mono text-xs font-normal">{content.name}.</a><a class="no-underline font-normal" href={`#${method.name}`}
+											<a href="#" class="no-underline text-nova-600 hover:text-nova-700 font-mono text-xs font-normal">{content.name}.</a><a class="no-underline font-normal" href={`#${method.name}`}
 												>{method.name}<span>({@html method.functionDef.params && method.functionDef.params.length > 0 
 												? method.functionDef.params.map(p => getTypeWithURL(ParseType(p), docs, base)).join(', ') 
 												: ''})</span></a
 											>:
-											<span class="text-lg text-yurh-600 font-normal">
+											<span class="text-lg text-yurh-500 font-normal">
 												{@html method.functionDef
 													? getTypeWithURL(ParseType(method.functionDef.returnType), docs, base)
 													: ''}
