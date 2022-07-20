@@ -435,7 +435,7 @@
 							{#each params as param}
 								<tr>
 									<td
-										class="py-2 pr-2 font-mono font-medium text-xs leading-6 text-sky-500 whitespace-nowrap dark:text-sky-400"
+										class="py-2 pr-2 font-mono font-medium text-xs leading-6 text-indigo-500 whitespace-nowrap dark:text-sky-400"
 									>
 										{param.name}
 

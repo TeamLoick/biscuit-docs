@@ -84,7 +84,7 @@ export function getTypeWithURL(typeExpression, docs, base) {
 				
 				if (ref && ref.length > 0) {
 					if (ref[0] === doc.name) {
-						const url = `<a class="underline text-yurh-500 hover:text-yurh-600 font-normal" href="${base}/docs/${packageName(doc.location)}/${doc.kind}/${doc.name}">${doc.name}</a>`;
+						const url = `<a class="underline text-yurh-600 hover:text-yurh-700 font-normal" href="${base}/docs/${packageName(doc.location)}/${doc.kind}/${doc.name}">${doc.name}</a>`;
 						return typeExpression.replaceAll(doc.name, url);
 					}
 				}
@@ -92,7 +92,7 @@ export function getTypeWithURL(typeExpression, docs, base) {
 		}
 	}
 
-	return `<span class="text-yurh-500 font-normal">${typeExpression}</span>`;
+	return `<span class="font-normal text-yurh-600">${typeExpression}</span>`;
 }
 
 function strictMatch(str, substr) {
