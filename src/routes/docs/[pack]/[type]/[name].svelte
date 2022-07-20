@@ -4,6 +4,7 @@
 
 	export let functions = [];
 	export let classes = [];
+	export let allDocs = [];
 
 	export let content = [];
 	export let type = [];
@@ -218,7 +219,9 @@
 						{/each}
 					</ul>
 
-					<ul class="text-base lg:text-sm w-64 pr-8 xl:w-72 xl:pr-16">
+					<ul
+						class="text-base lg:text-sm w-64 pr-11 xl:w-96 xl:pr-12"
+					>
 						<li class="mb-2">
 							<span
 								class="font-display font-medium text-slate-900 dark:text-white"
@@ -227,11 +230,21 @@
 						</li>
 
 						{#each methods as method}
-							<li>
+							<li class="w-full">
+								<span
+									class="text-nova-500 no-underline text-xs leading-6 pr-2 py-2 font-mono"
+									>{method.kind === 'setter'
+										? '[set]'
+										: ''}{method.kind === 'getter'
+										? '[get]'
+										: ''}</span
+								>
 								<a
 									class="py-2 pr-2 font-mono font-medium text-xs leading-6 text-gray-500 whitespace-nowrap"
-									href={`#${method.name}`}>{method.name}</a
+									href={`#${method.name}`}
 								>
+									{method.name}
+								</a>
 							</li>
 						{/each}
 					</ul>
@@ -305,6 +318,24 @@
 											? property.jsDoc?.doc
 											: ''}
 									</div>
+
+									<div
+										class="mt-2 text-lg text-justify flex items-center gap-4 text-justify text-sm"
+									>
+										{#each allDocs as c}
+											{#if ParseType(property.tsType).includes(c.name)}
+												{@const pack = packageName(
+													c.location
+												)}
+												<a
+													class="text-yurh-500 hover:text-yurh-600 active:text-yurh-700 text-xl"
+													href={`${base}/docs/${pack}/class/${c.name}`}
+												>
+													{c.name}
+												</a>
+											{/if}
+										{/each}
+									</div>
 								</div>
 							</article>
 						{/each}
@@ -337,14 +368,28 @@
 										</div>
 
 										<h2
-											class="mt-2 text-lg font-bold text-slate-900"
+											class="mt-2 text-lg text-slate-900"
 										>
-											<a href={`#${method.name}`}
-												>{method.name}()</a
+											<span
+												class="text-nova-500 no-underline text-xs leading-6 pr-2 py-2 font-mono"
+												>{method.kind === 'setter'
+													? '[set]'
+													: ''}{method.kind ===
+												'getter'
+													? '[get]'
+													: ''}</span
+											>
+											<a class="no-underline font-normal" href={`#${method.name}`}
+												>{method.name}<span>({@html method.functionDef.params && method.functionDef.params.length > 0 
+												? method.functionDef.params.map(p => `<span class="text-nova-600">${ParseType(p.tsType)}</span>`).join(', ') 
+												: ''})</span></a
 											>:
 											<span class="text-lg text-red-400">
 												{method.functionDef
-													? ParseType(method.functionDef.returnType)
+													? ParseType(
+															method.functionDef
+																.returnType
+													  )
 													: ''}
 											</span>
 										</h2>
@@ -370,6 +415,24 @@
 									class="mt-2 text-justify flex items-center gap-4"
 								>
 									{method.jsDoc?.doc ? method.jsDoc?.doc : ''}
+								</div>
+
+								<div
+									class="mt-2 text-lg text-justify flex items-center gap-4 text-justify text-sm"
+								>
+									{#each allDocs as c}
+										{#if ParseType(method.functionDef.returnType).includes(c.name)}
+											{@const pack = packageName(
+												c.location
+											)}
+											<a
+												class="text-yurh-500 hover:text-yurh-600 active:text-yurh-700 text-xl"
+												href={`${base}/docs/${pack}/class/${c.name}`}
+											>
+												{c.name}
+											</a>
+										{/if}
+									{/each}
 								</div>
 							</article>
 						{/each}
@@ -446,6 +509,24 @@
 						class="sticky bottom-0 h-px -mt-px bg-slate-200 dark:bg-slate-400/20"
 					/>
 				</div>
+
+				{#each params as param}
+					<div
+						class="mt-2 text-lg text-justify flex items-center gap-4 text-justify text-sm"
+					>
+						{#each allDocs as c}
+							{#if ParseType(param.tsType).includes(c.name)}
+								{@const pack = packageName(c.location)}
+								<a
+									class="underline text-yurh-500 hover:text-yurh-600 active:text-yurh-700 text-xl"
+									href={`${base}/docs/${pack}/class/${c.name}`}
+								>
+									{c.name}
+								</a>
+							{/if}
+						{/each}
+					</div>
+				{/each}
 			{/if}
 		</div>
 	</article>

@@ -34,7 +34,7 @@ export const ParseType = (tsType) => {
 			return tsType.union.map(int => ParseType(int)).join(' | ');
 		
 		case 'array':
-			return ParseType(tsType.array);
+			return ParseType(tsType.array) + '[]';
 
 		case 'literal':
 			return tsType.literal.kind;
@@ -50,7 +50,11 @@ export const ParseType = (tsType) => {
 
 			return "";
 
+		case 'getter':
+		case 'setter':
+			return tsType.functionDef?.returnType ? ParseType(tsType.functionDef.returnType) : "";
+
 		default:
-			return tsType?.repr || "";
+			return tsType?.repr || "void";
 	}
 }

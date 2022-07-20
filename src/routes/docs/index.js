@@ -14,12 +14,15 @@ export const GET = async () => {
 	}
 	);
 
+	let allDocs = [...classes, ...functions];
+
 	return {
 		headers: { 'Content-Type': 'application/json' },
 		status: 200,
 		body: {
 			functions,
 			classes,
+			allDocs,
 		},
 	};
 };

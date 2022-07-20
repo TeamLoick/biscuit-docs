@@ -13,6 +13,8 @@ export const GET = async ({ params }) => {
 		}
 	});
 
+	let allDocs = [...classes, ...functions];
+
 	let content = schema.find(
 		(d) => d.kind == params.type && d.name == params.name
 	);
@@ -23,6 +25,7 @@ export const GET = async ({ params }) => {
 		body: {
 			functions,
 			classes,
+			allDocs,
 
 			content: content,
 			type: params.type
