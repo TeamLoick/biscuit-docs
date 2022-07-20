@@ -370,7 +370,6 @@
 												{@html method.functionDef && method.functionDef?.returnType
 													? getTypeWithURL(ParseType(method.functionDef.returnType), docs, base)
 													: ''}
-													{ParseType(method.functionDef?.returnType)}
 											</span>
 										</h2>
 									</div>
