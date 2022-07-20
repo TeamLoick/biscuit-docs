@@ -359,15 +359,18 @@
 												'getter'
 													? '[get]'
 													: ''}</span>
+											<!-- svelte-ignore a11y-invalid-attribute -->
 											<a href="#" class="no-underline text-yurh-600 hover:text-yurh-700 font-mono text-xs font-normal">{content.name}.</a><a class="no-underline font-normal" href={`#${method.name}`}
-												>{method.name}<span>({@html method.functionDef.params && method.functionDef.params.length > 0 
+												>
+												{method.name}<span>({@html method.functionDef.params && method.functionDef.params.length > 0 
 												? method.functionDef.params.map(p => getTypeWithURL(ParseType(p), docs, base)).join(', ') 
 												: ''})</span></a
 											>:
 											<span class="text-lg text-yurh-600 font-normal">
-												{@html method.functionDef
+												{@html method.functionDef && method.functionDef?.returnType
 													? getTypeWithURL(ParseType(method.functionDef.returnType), docs, base)
 													: ''}
+													{ParseType(method.functionDef?.returnType)}
 											</span>
 										</h2>
 									</div>
