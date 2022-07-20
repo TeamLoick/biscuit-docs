@@ -1,5 +1,5 @@
 <script>
-	import { packageName, locationUrl } from '$root/utils/docs';
+	import { packageName, locationUrl, ParseType } from '$root/utils/docs';
 	import { base } from '$app/paths';
 
 	export let functions = [];
@@ -277,20 +277,7 @@
 											</a>:
 											<span class="text-lg text-red-400">
 												{#if property.tsType}
-													{#if property.tsType.kind === 'union'}
-														{property.tsType.union
-															.map((u) => u.repr)
-															.join(' | ')}
-													{/if}
-
-													{#if property.tsType.kind === 'intersection'}
-														{property.tsType.intersection
-															.map((i) => i.repr)
-															.join(' & ')}
-													{/if}
-													{#if property.tsType.repr && property.tsType.repr != ''}
-														{property.tsType.repr}
-													{/if}
+													{ParseType(property.tsType)}
 												{/if}
 											</span>
 										</h2>
@@ -316,7 +303,7 @@
 									>
 										{property.jsDoc?.doc
 											? property.jsDoc?.doc
-											: 'Description not available.'}
+											: ''}
 									</div>
 								</div>
 							</article>
@@ -353,13 +340,12 @@
 											class="mt-2 text-lg font-bold text-slate-900"
 										>
 											<a href={`#${method.name}`}
-												>{method.name}</a
+												>{method.name}()</a
 											>:
 											<span class="text-lg text-red-400">
 												{method.functionDef
-													? method.functionDef
-															.returnType?.repr
-													: 'any'}
+													? ParseType(method.functionDef.returnType)
+													: ''}
 											</span>
 										</h2>
 									</div>
@@ -441,7 +427,7 @@
 											{param.tsType.kind}
 											<span>&lt;</span><span
 												class="text-sm"
-												>{param.tsType.repr}</span
+												>{ParseType(param.tsType)}</span
 											><span>&gt;</span>
 										</td>
 									{/if}
