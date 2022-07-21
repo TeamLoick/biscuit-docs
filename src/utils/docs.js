@@ -79,6 +79,20 @@ export const ParseType = (tsType) => {
 		case 'rest':
 			return ParseType(tsType.tsType);
 
+		case 'fnOrConstructor':
+			// eslint-disable-next-line no-case-declarations
+			let parsed = '';
+
+			if (tsType.fnOrConstructor.params && tsType.fnOrConstructor.params.length > 0) {
+				parsed = '(' + tsType.fnOrConstructor.params.map(p => `${p.name}${p.optional ? '?' : ''}: ${ParseType(p.tsType)}`).join(', ') + ')';
+			} else {
+				parsed = `()`;
+			}
+
+			parsed += ` => ${ParseType(tsType.fnOrConstructor.tsType)}`;
+
+			return parsed;
+
 		case 'typePredicate':
 		default:
 			return tsType?.repr || "void";
