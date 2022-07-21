@@ -386,7 +386,7 @@
 											<span class="text-lg text-yurh-600 font-normal">
 												{@html method.functionDef && method.functionDef?.returnType
 													? getTypeWithURL(ParseType(method.functionDef.returnType), docs, base)
-													: ''}
+													: 'void'}
 											</span>
 										</h2>
 									</div>
