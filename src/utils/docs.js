@@ -18,6 +18,10 @@ export function packageName(location) {
 export const ParseType = (tsType) => {
 	switch (tsType?.kind) {
 		case 'typeRef':
+			if (tsType.typeRef?.typeName === 'RegExp') {
+				return 'RegExp';
+			}
+
 			if (tsType.typeRef?.typeParams !== null) {
 				return `${tsType.repr}&#60;${tsType.typeRef?.typeParams?.map(tp => ParseType(tp))?.join(', ')}&#62;`;
 			}
@@ -40,6 +44,14 @@ export const ParseType = (tsType) => {
 			return tsType.repr === '' ? '[]' : '';
 
 		case 'literal':
+			if (tsType.literal.kind === 'number') {
+				return tsType.repr;
+			}
+
+			if (tsType.literal.kind === 'string') {
+				return `"${tsType.repr}"`;
+			}
+			
 			return tsType.literal.kind;
 
 		case 'typeLiteral':

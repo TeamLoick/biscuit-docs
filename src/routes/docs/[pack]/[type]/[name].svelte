@@ -297,7 +297,8 @@
 										<h2
 											class="mt-2 text-lg font-normal text-slate-900"
 										>
-											<span class="text-nova-600 font-mono text-xs">{content.name}.</span><a class="no-underline" href={`#${property.name}`}>
+											<!-- svelte-ignore a11y-invalid-attribute -->
+											<a class="text-nova-600 font-mono text-xs no-underline" href="#">{content.name}.</a><a class="no-underline" href={`#${property.name}`}>
 												{property.name}</a>:
 											<span class="text-lg text-yurh-600">
 												{#if property.tsType}
