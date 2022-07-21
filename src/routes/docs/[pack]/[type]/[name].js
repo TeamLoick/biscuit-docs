@@ -13,6 +13,8 @@ export const GET = async ({ params }) => {
 		}
 	});
 
+	functions = functions.sort((a, b) => a.name.localeCompare(b.name));
+	classes = classes.sort((a, b) => a.name.localeCompare(b.name));
 	const docs = [...classes, ...functions];
 
 	let content = schema.find(
