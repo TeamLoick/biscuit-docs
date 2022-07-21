@@ -60,7 +60,7 @@ export const ParseType = (tsType) => {
 			}
 
 			if (tsType.typeLiteral.properties && tsType.typeLiteral.properties.length > 0) {
-				return tsType.typeLiteral.properties.map(p => ParseType(p.tsType)).join(', ');
+				return '{' + tsType.typeLiteral.properties.map(p => ` ${p.name}${p.optional ? '?' : ''}: ${ParseType(p.tsType)} `).join(', ') + '}'
 			}
 
 			return "";
@@ -69,18 +69,15 @@ export const ParseType = (tsType) => {
 		case 'setter':
 			return tsType.functionDef?.returnType ? ParseType(tsType.functionDef.returnType) : "";
 
-		case 'identifier':
-			return ParseType(tsType.tsType);
-
-		case 'assign':
-			return ParseType(tsType.left);
-
 		case 'object':
 			return `{ ${tsType.props[0].key}: ${ParseType(tsType.tsType)} }`;
 
-		case 'typePredicate':
-			return tsType.repr;
+		case 'assign':
+		case 'identifier':
+		case 'rest':
+			return ParseType(tsType.tsType);
 
+		case 'typePredicate':
 		default:
 			return tsType?.repr || "void";
 	}
