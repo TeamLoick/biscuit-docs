@@ -73,6 +73,8 @@ export const ParseType = (tsType) => {
 			return `{ ${tsType.props[0].key}: ${ParseType(tsType.tsType)} }`;
 
 		case 'assign':
+			return ParseType(tsType.left.tsType);
+
 		case 'identifier':
 		case 'rest':
 			return ParseType(tsType.tsType);

@@ -376,7 +376,11 @@
 											<a href="#" class="no-underline text-yurh-600 hover:text-yurh-700 font-mono text-xs font-normal">{content.name}.</a><a class="no-underline font-normal" href={`#${method.name}`}
 												>
 												{method.name}<span>({@html method.functionDef.params && method.functionDef.params.length > 0 
-												? method.functionDef.params.map(p => `${p.kind === 'identifier' ? p.name +':' : ''}${p.kind === 'rest' ? '...' + p.arg.name + ':' : ''} ${getTypeWithURL(ParseType(p), docs, base)}`).join(', ') 
+												? method.functionDef.params.map(
+													p => `${p.kind === 'identifier' ? p.name +':' : ''}
+													${p.kind === 'rest' ? '...' + p.arg.name + ':' : ''}
+													${p.kind === 'assign' ? p.left.name + ':' : ''} 
+													${getTypeWithURL(ParseType(p), docs, base)}`).join(', ') 
 												: ''})</span></a
 											>:
 											<span class="text-lg text-yurh-600 font-normal">
