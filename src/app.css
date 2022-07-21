@@ -26,22 +26,16 @@
 	src: url('/biscuit-web/fonts/Inter-italic.var.woff2') format('woff2');
 }
 
+@tailwind components;
+@tailwind utilities;
+
+
 body {
 	animation: opacity 1s ease-in-out;
 }
 
 .subtitle {
 	animation: opacity 3s ease-in-out;
-}
-
-@keyframes opacity {
-	from {
-		opacity: 0.1;
-	}
-
-	to {
-		opacity: 1;
-	}
 }
 
 details summary {
@@ -78,5 +72,30 @@ details[open] summary .closed-icon {
 	display: none;
 }
 
-@tailwind components;
-@tailwind utilities;
+details summary:active .open-icon {
+	animation: scaleIcon 0.7s ease-in-out;
+}
+
+details summary:active .closed-icon {
+	animation: scaleIcon 0.7s ease-in-out;
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes scaleIcon {
+	from {
+		transform: scale(0.6);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
