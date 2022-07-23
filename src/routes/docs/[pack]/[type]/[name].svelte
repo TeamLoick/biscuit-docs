@@ -904,7 +904,9 @@
 		</div>
 	</div>
 
-	<div
+	<div class="relative z-20 prose prose-slate mt-12 dark:prose-dark">
+		{#each methods as method}
+		<div
 		class="relative z-20 prose prose-slate mt-12 dark:prose-dark"
 	>
 		<span class="mt-6 text-lg tracking-tight text-slate-700"
@@ -951,36 +953,34 @@
 									href={`#${method.name}`}
 								>
 									{method.name}<span
-										>({@html method.functionDef
-											.params &&
-										method.functionDef.params
-											.length > 0
-											? method.functionDef.params
-													.map(
-														(p) => `${
-															p.kind ===
-															'identifier'
-																? p.name +
-																  ':'
-																: ''
-														}
-										${p.kind === 'rest' ? '...' + p.arg.name + ':' : ''}
-										${p.kind === 'assign' ? p.left.name + ':' : ''} 
-										${getTypeWithURL(ParseType(p), docs, base)}`
-													)
-													.join(', ')
-											: ''})</span
+										>({@html method.params &&
+											method.params
+												.length > 0
+												? method.params
+														.map(
+															(p) => `${
+																p.kind ===
+																'identifier'
+																	? p.name +
+																	  ':'
+																	: ''
+															}
+											${p.kind === 'rest' ? '...' + p.arg.name + ':' : ''}
+											${p.kind === 'assign' ? p.left.name + ':' : ''} 
+											${getTypeWithURL(ParseType(p), docs, base)}`
+														)
+														.join(', ')
+												: ''})</span
 									></a
 								>:
 								<span
 									class="text-lg text-yurh-600 font-normal"
 								>
-									{@html method.functionDef &&
-									method.functionDef?.returnType
+									{@html method.returnType &&
+									method?.returnType
 										? getTypeWithURL(
 												ParseType(
 													method
-														.functionDef
 														.returnType
 												),
 												docs,
@@ -1015,6 +1015,8 @@
 				</article>
 			{/each}
 		</div>
+		</div>
+		{/each}
 	</div>
 {/if}
 
