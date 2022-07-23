@@ -184,6 +184,27 @@
 				class="font-display text-3xl tracking-tight text-slate-900 dark:text-white"
 			>
 				{content.name}
+				{#if content.classDef}
+					<span class="font-mono text-2xl">
+						{#if content.classDef.extends}
+							<span class="text-slate-500">
+								extends
+							</span>
+							<span class="text-yurh-600">
+								{@html getTypeWithURL(content.classDef.extends, docs, base)}
+							</span>
+						{/if}
+
+						{#if content.classDef.implements && content.classDef.implements.length > 0}
+							<span class="text-slate-500">
+								implements
+							</span>
+							<span class="text-yurh-600">
+								{@html content.classDef.implements.map(impl => getTypeWithURL(ParseType(impl), docs, base)).join(', ')}
+							</span>
+						{/if}
+					</span>
+				{/if}
 			</h1>
 
 			{#if content.jsDoc}
