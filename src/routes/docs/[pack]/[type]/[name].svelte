@@ -1,9 +1,15 @@
 <script>
-	import { packageName, locationUrl, ParseType, getTypeWithURL } from '$root/utils/docs';
+	import {
+		packageName,
+		locationUrl,
+		ParseType,
+		getTypeWithURL,
+	} from '$root/utils/docs';
 	import { base } from '$app/paths';
 
 	export let functions = [];
 	export let classes = [];
+	export let interfaces = [];
 	export let docs = [];
 
 	export let content = [];
@@ -48,13 +54,39 @@
 				<li>
 					<details open>
 						<summary class="list-none w-full cursor-pointer">
-							<svg xmlns="http://www.w3.org/2000/svg" class="closed-icon h-4 w-4 hover:" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-								<path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-							  </svg>
-							  <svg xmlns="http://www.w3.org/2000/svg" class="open-icon h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-							  </svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="closed-icon h-4 w-4 hover:"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+								/>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+								/>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="open-icon h-4 w-4"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
+								/>
+							</svg>
 							<h2
 								class="font-display font-medium text-slate-900 dark:text-white"
 							>
@@ -79,13 +111,39 @@
 				<li>
 					<details open>
 						<summary class="list-none w-full cursor-pointer">
-							<svg xmlns="http://www.w3.org/2000/svg" class="closed-icon h-4 w-4 hover:" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-								<path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-							  </svg>
-							  <svg xmlns="http://www.w3.org/2000/svg" class="open-icon h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-							  </svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="closed-icon h-4 w-4 hover:"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+								/>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+								/>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="open-icon h-4 w-4"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
+								/>
+							</svg>
 							<h2
 								class="font-display font-medium text-slate-900 dark:text-white"
 							>
@@ -125,13 +183,39 @@
 				<li>
 					<details open>
 						<summary class="list-none w-full cursor-pointer">
-							<svg xmlns="http://www.w3.org/2000/svg" class="closed-icon h-4 w-4 hover:" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-								<path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-							  </svg>
-							  <svg xmlns="http://www.w3.org/2000/svg" class="open-icon h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-							  </svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="closed-icon h-4 w-4 hover:"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+								/>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+								/>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="open-icon h-4 w-4"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
+								/>
+							</svg>
 							<h2
 								class="font-display font-medium text-slate-900 dark:text-white"
 							>
@@ -167,6 +251,78 @@
 						</ul>
 					</details>
 				</li>
+
+				<li>
+					<details open>
+						<summary class="list-none w-full cursor-pointer">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="closed-icon h-4 w-4 hover:"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+								/>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+								/>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="open-icon h-4 w-4"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
+								/>
+							</svg>
+							<h2
+								class="font-display font-medium text-slate-900 dark:text-white"
+							>
+								Interfaces
+							</h2>
+						</summary>
+
+						<ul
+							class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"
+						>
+							{#each interfaces as inter}
+								{@const pack = packageName(inter.location)}
+
+								{#if content.name == inter.name}
+									<li class="relative">
+										<span
+											class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-nova-500 before:bg-nova-500"
+										>
+											{inter.name}
+										</span>
+									</li>
+								{:else}
+									<li class="relative">
+										<a
+											class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
+											href={`${base}/docs/${pack}/interface/${inter.name}`}
+										>
+											{inter.name}
+										</a>
+									</li>
+								{/if}
+							{/each}
+						</ul>
+					</details>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -175,6 +331,7 @@
 <div
 	class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16"
 >
+	<!-- CLASSES DEF START -->
 	<article>
 		<header class="mb-9 space-y-1">
 			<p class="font-display text-sm font-medium text-nova-600">
@@ -187,20 +344,61 @@
 				{#if content.classDef}
 					<span class="font-mono text-2xl">
 						{#if content.classDef.extends}
-							<span class="text-slate-500">
-								extends
-							</span>
+							<span class="text-slate-500"> extends </span>
 							<span class="text-yurh-600">
-								{@html getTypeWithURL(content.classDef.extends, docs, base)}
+								{@html getTypeWithURL(
+									content.classDef.extends,
+									docs,
+									base
+								)}
 							</span>
 						{/if}
 
 						{#if content.classDef.implements && content.classDef.implements.length > 0}
-							<span class="text-slate-500">
-								implements
-							</span>
+							<span class="text-slate-500"> implements </span>
 							<span class="text-yurh-600">
-								{@html content.classDef.implements.map(impl => getTypeWithURL(ParseType(impl), docs, base)).join(', ')}
+								{@html content.classDef.implements
+									.map((impl) =>
+										getTypeWithURL(
+											ParseType(impl),
+											docs,
+											base
+										)
+									)
+									.join(', ')}
+							</span>
+						{/if}
+					</span>
+				{/if}
+				{#if content.interfaceDef}
+					<span class="font-mono text-2xl">
+						{#if content.interfaceDef.extends && content.interfaceDef.extends > 0}
+							<span class="text-slate-500"> extends </span>
+							<span class="text-yurh-600">
+								{@html content.interfaceDef.extends
+									.map((impl) =>
+										getTypeWithURL(
+											ParseType(impl),
+											docs,
+											base
+										)
+									)
+									.join(', ')}
+							</span>
+						{/if}
+
+						{#if content.interfaceDef.implements && content.interfaceDef.implements.length > 0}
+							<span class="text-slate-500"> implements </span>
+							<span class="text-yurh-600">
+								{@html content.interfaceDef.implements
+									.map((impl) =>
+										getTypeWithURL(
+											ParseType(impl),
+											docs,
+											base
+										)
+									)
+									.join(', ')}
 							</span>
 						{/if}
 					</span>
@@ -319,11 +517,24 @@
 											class="mt-2 text-lg font-normal text-slate-900"
 										>
 											<!-- svelte-ignore a11y-invalid-attribute -->
-											<a class="text-nova-600 font-mono text-xs no-underline" href="#">{content.name}.</a><a class="no-underline" href={`#${property.name}`}>
-												{property.name}</a>:
+											<a
+												class="text-nova-600 font-mono text-xs no-underline"
+												href="#">{content.name}.</a
+											><a
+												class="no-underline"
+												href={`#${property.name}`}
+											>
+												{property.name}</a
+											>:
 											<span class="text-lg text-yurh-600">
 												{#if property.tsType}
-													{@html getTypeWithURL(ParseType(property.tsType), docs, base)}
+													{@html getTypeWithURL(
+														ParseType(
+															property.tsType
+														),
+														docs,
+														base
+													)}
 												{/if}
 											</span>
 										</h2>
@@ -392,21 +603,53 @@
 													: ''}{method.kind ===
 												'getter'
 													? '[get]'
-													: ''}</span>
+													: ''}</span
+											>
 											<!-- svelte-ignore a11y-invalid-attribute -->
-											<a href="#" class="no-underline text-yurh-600 hover:text-yurh-700 font-mono text-xs font-normal">{content.name}.</a><a class="no-underline font-normal" href={`#${method.name}`}
-												>
-												{method.name}<span>({@html method.functionDef.params && method.functionDef.params.length > 0 
-												? method.functionDef.params.map(
-													p => `${p.kind === 'identifier' ? p.name +':' : ''}
+											<a
+												href="#"
+												class="no-underline text-yurh-600 hover:text-yurh-700 font-mono text-xs font-normal"
+												>{content.name}.</a
+											><a
+												class="no-underline font-normal"
+												href={`#${method.name}`}
+											>
+												{method.name}<span
+													>({@html method.functionDef
+														.params &&
+													method.functionDef.params
+														.length > 0
+														? method.functionDef.params
+																.map(
+																	(p) => `${
+																		p.kind ===
+																		'identifier'
+																			? p.name +
+																			  ':'
+																			: ''
+																	}
 													${p.kind === 'rest' ? '...' + p.arg.name + ':' : ''}
 													${p.kind === 'assign' ? p.left.name + ':' : ''} 
-													${getTypeWithURL(ParseType(p), docs, base)}`).join(', ') 
-												: ''})</span></a
+													${getTypeWithURL(ParseType(p), docs, base)}`
+																)
+																.join(', ')
+														: ''})</span
+												></a
 											>:
-											<span class="text-lg text-yurh-600 font-normal">
-												{@html method.functionDef && method.functionDef?.returnType
-													? getTypeWithURL(ParseType(method.functionDef.returnType), docs, base)
+											<span
+												class="text-lg text-yurh-600 font-normal"
+											>
+												{@html method.functionDef &&
+												method.functionDef?.returnType
+													? getTypeWithURL(
+															ParseType(
+																method
+																	.functionDef
+																	.returnType
+															),
+															docs,
+															base
+													  )
 													: 'void'}
 											</span>
 										</h2>
@@ -433,13 +676,14 @@
 								>
 									{method.jsDoc?.doc ? method.jsDoc?.doc : ''}
 								</div>
-
 							</article>
 						{/each}
 					</div>
 				</div>
 			{/if}
+			<!-- CLASSES DEF END -->
 
+			<!-- FUNCTION DEF START-->
 			{#if content.functionDef}
 				{@const params = content.functionDef.params}
 
@@ -486,9 +730,12 @@
 									{#if param.tsType}
 										<td
 											class="py-2 pl-2 font-mono text-xs leading-6 text-indigo-600 whitespace-pre dark:text-indigo-300"
-										><span
-												class="text-sm"
-												>{@html getTypeWithURL(ParseType(param.tsType), docs, base)}</span
+											><span class="text-sm"
+												>{@html getTypeWithURL(
+													ParseType(param.tsType),
+													docs,
+													base
+												)}</span
 											>
 										</td>
 									{/if}
@@ -510,4 +757,265 @@
 			{/if}
 		</div>
 	</article>
+	<!-- FUNCTION DEF END-->
+
+	{#if content.interfaceDef}
+		
+	{@const properties = content.interfaceDef.properties}
+	{@const methods = content.interfaceDef.methods}
+
+	<div
+		class="flex relative z-20 prose prose-slate mt-12 dark:prose-dark"
+	>
+		<ul class="text-base lg:text-sm w-64 pr-8 xl:w-72 xl:pr-16">
+			<li class="mb-2">
+				<span
+					class="font-display font-medium text-slate-900 dark:text-white"
+					>Properties</span
+				>
+			</li>
+
+			{#each properties as property}
+				<li>
+					<a
+						class="py-2 pr-2 font-mono font-medium text-xs leading-6 text-gray-500 whitespace-nowrap"
+						href={`#${property.name}`}
+						>{property.name}</a
+					>
+				</li>
+			{/each}
+		</ul>
+
+		<ul
+			class="text-base lg:text-sm w-64 pr-11 xl:w-96 xl:pr-12"
+		>
+			<li class="mb-2">
+				<span
+					class="font-display font-medium text-slate-900 dark:text-white"
+					>Methods</span
+				>
+			</li>
+
+			{#each methods as method}
+				<li class="w-full">
+					<span
+						class="text-nova-500 no-underline text-xs leading-6 pr-2 py-2 font-mono"
+						>{method.kind === 'setter'
+							? '[set]'
+							: ''}{method.kind === 'getter'
+							? '[get]'
+							: ''}</span
+					>
+					<a
+						class="py-2 pr-2 font-mono font-medium text-xs leading-6 text-gray-500 whitespace-nowrap"
+						href={`#${method.name}`}
+					>
+						{method.name}
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</div>
+
+	<div
+		class="relative z-20 prose prose-slate mt-12 dark:prose-dark"
+	>
+		<span class="mt-6 text-lg tracking-tight text-slate-700"
+			>Properties</span
+		>
+
+		<div
+			class="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100"
+		>
+			{#each properties as property}
+				<article id={property.name} class="py-10 sm:py-12">
+					<div
+						class="px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0"
+					>
+						<div class="flex flex-col items-start">
+							<div class="flex space-x-2">
+								{#if property.readonly}
+									<span
+										class="font-mono text-sm leading-7 text-nova-500"
+										>[readonly]</span
+									>
+								{/if}
+
+								{#if property.optional}
+									<span
+										class="font-mono text-sm leading-7 text-nova-500"
+										>[optional]</span
+									>
+								{/if}
+							</div>
+
+							<h2
+								class="mt-2 text-lg font-normal text-slate-900"
+							>
+								<!-- svelte-ignore a11y-invalid-attribute -->
+								<a
+									class="text-nova-600 font-mono text-xs no-underline"
+									href="#">{content.name}.</a
+								><a
+									class="no-underline"
+									href={`#${property.name}`}
+								>
+									{property.name}</a
+								>:
+								<span class="text-lg text-yurh-600">
+									{#if property.tsType}
+										{@html getTypeWithURL(
+											ParseType(
+												property.tsType
+											),
+											docs,
+											base
+										)}
+									{/if}
+								</span>
+							</h2>
+						</div>
+						<div class="mt-4 flex items-center gap-4">
+							<span
+								aria-hidden="true"
+								class="text-sm font-bold text-slate-400"
+								>/</span
+							>
+
+							<a
+								class="flex items-center text-sm font-bold leading-6 text-nova-500 hover:text-nova-600 active:text-nova-700"
+								aria-label="Show notes for episode 2: Hank Scorpio"
+								href={locationUrl(
+									property.location
+								)}
+								>Github
+							</a>
+						</div>
+						<div
+							class="mt-2 text-lg text-justify flex items-center gap-4"
+						>
+							{property.jsDoc?.doc
+								? property.jsDoc?.doc
+								: ''}
+						</div>
+					</div>
+				</article>
+			{/each}
+		</div>
+	</div>
+
+	<div
+		class="relative z-20 prose prose-slate mt-12 dark:prose-dark"
+	>
+		<span class="mt-6 text-lg tracking-tight text-slate-700"
+			>Methods</span
+		>
+
+		<div
+			class="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100"
+		>
+			{#each methods as method}
+				<article id={method.name} class="py-10 sm:py-12">
+					<div
+						class="px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0"
+					>
+						<div class="flex flex-col items-start">
+							<div class="flex space-x-2">
+								{#if method.optional}
+									<span
+										class="font-mono text-sm leading-7 text-nova-500"
+										>[optional]</span
+									>
+								{/if}
+							</div>
+
+							<h2
+								class="mt-2 text-lg text-slate-900 font-normal"
+							>
+								<span
+									class="text-nova-500 no-underline text-xs leading-6 pr-2 py-2 font-mono"
+									>{method.kind === 'setter'
+										? '[set]'
+										: ''}{method.kind ===
+									'getter'
+										? '[get]'
+										: ''}</span
+								>
+								<!-- svelte-ignore a11y-invalid-attribute -->
+								<a
+									href="#"
+									class="no-underline text-yurh-600 hover:text-yurh-700 font-mono text-xs font-normal"
+									>{content.name}.</a
+								><a
+									class="no-underline font-normal"
+									href={`#${method.name}`}
+								>
+									{method.name}<span
+										>({@html method.functionDef
+											.params &&
+										method.functionDef.params
+											.length > 0
+											? method.functionDef.params
+													.map(
+														(p) => `${
+															p.kind ===
+															'identifier'
+																? p.name +
+																  ':'
+																: ''
+														}
+										${p.kind === 'rest' ? '...' + p.arg.name + ':' : ''}
+										${p.kind === 'assign' ? p.left.name + ':' : ''} 
+										${getTypeWithURL(ParseType(p), docs, base)}`
+													)
+													.join(', ')
+											: ''})</span
+									></a
+								>:
+								<span
+									class="text-lg text-yurh-600 font-normal"
+								>
+									{@html method.functionDef &&
+									method.functionDef?.returnType
+										? getTypeWithURL(
+												ParseType(
+													method
+														.functionDef
+														.returnType
+												),
+												docs,
+												base
+										  )
+										: 'void'}
+								</span>
+							</h2>
+						</div>
+					</div>
+
+					<div class="mt-4 flex items-center gap-4">
+						<span
+							aria-hidden="true"
+							class="text-sm font-bold text-slate-400"
+							>/</span
+						>
+
+						<a
+							class="flex items-center text-sm font-bold leading-6 text-nova-500 hover:text-nova-600 active:text-nova-700"
+							aria-label="Show notes for episode 2: Hank Scorpio"
+							href={locationUrl(method.location)}
+							>Github
+						</a>
+					</div>
+
+					<div
+						class="mt-2 text-justify flex items-center gap-4"
+					>
+						{method.jsDoc?.doc ? method.jsDoc?.doc : ''}
+					</div>
+				</article>
+			{/each}
+		</div>
+	</div>
+{/if}
+
 </div>

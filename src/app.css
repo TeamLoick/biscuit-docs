@@ -29,7 +29,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
 	animation: opacity 1s ease-in-out;
 }

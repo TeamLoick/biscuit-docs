@@ -13,9 +13,16 @@ export const GET = async () => {
 		}
 	});
 
+	let interfaces = schema.filter((d) => {
+		if (d.kind === 'interface' && d.declarationKind === 'export' && d.name !== 'default' && d.declarationKind !== 'private') {
+			return d;
+		}
+	});
+
 	functions = functions.sort((a, b) => a.name.localeCompare(b.name));
 	classes = classes.sort((a, b) => a.name.localeCompare(b.name));
-	const docs = [...classes, ...functions];
+	interfaces = interfaces.sort((a, b) => a.name.localeCompare(b.name));
+	const docs = [...classes, ...functions, ...interfaces];
 
 	return {
 		headers: { 'Content-Type': 'application/json' },
@@ -23,6 +30,7 @@ export const GET = async () => {
 		body: {
 			functions,
 			classes,
+			interfaces,
 			docs,
 		},
 	};

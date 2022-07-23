@@ -8,14 +8,21 @@ export const GET = async ({ params }) => {
 	});
 
 	let classes = schema.filter((d) => {
-		if (d.kind === 'class' && d.declarationKind === 'export' && d.name !== 'default' && d.declarationKind !== 'private') {
+		if (d.kind === 'class' && d.declarationKind === 'export' && d.name !== 'default') {
+			return d;
+		}
+	});
+
+	let interfaces = schema.filter((d) => {
+		if (d.kind === 'interface' && d.declarationKind === 'export' && d.name !== 'default') {
 			return d;
 		}
 	});
 
 	functions = functions.sort((a, b) => a.name.localeCompare(b.name));
 	classes = classes.sort((a, b) => a.name.localeCompare(b.name));
-	const docs = [...classes, ...functions];
+	interfaces = interfaces.sort((a, b) => a.name.localeCompare(b.name));
+	const docs = [...classes, ...functions, ...interfaces];
 
 	let content = schema.find(
 		(d) => d.kind == params.type && d.name == params.name
@@ -27,6 +34,7 @@ export const GET = async ({ params }) => {
 		body: {
 			functions,
 			classes,
+			interfaces,
 			docs,
 
 			content: content,
