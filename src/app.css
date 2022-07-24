@@ -29,8 +29,37 @@
 @tailwind components;
 @tailwind utilities;
 
+h1,
+p {
+	color: white;
+}
+
+.bg-white {
+	background-color: #1e1e1e;
+}
+
+.py-2 {
+	background-color: #1e1e1e;
+}
+
+.bg-nova-600\/20 {
+	background-color: #1e1e1e;
+}
+
+.p-4 {
+	background-color: #27272a;
+}
+
+.no-underline {
+	color: white;
+}
+
 body {
 	animation: opacity 1s ease-in-out;
+}
+
+li {
+	color: white;
 }
 
 .subtitle {
