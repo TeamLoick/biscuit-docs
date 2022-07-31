@@ -1,8 +1,9 @@
 .DS_Store
 node_modules
+biscuit/node_modules
+biscuit/packages/*/dist
 /build
-/.svelte-kit
-/package
 .env
 .env.*
 !.env.example
+package-lock.json

@@ -1,29 +1,27 @@
 {
-	"name": "biscuit-docs",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"package": "svelte-kit package",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync",
-		"lint": "eslint ."
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-static": "^1.0.0-next.37",
-		"@sveltejs/kit": "next",
-		"@tailwindcss/aspect-ratio": "^0.4.0",
-		"@tailwindcss/forms": "^0.5.2",
-		"@tailwindcss/line-clamp": "^0.4.0",
-		"@tailwindcss/typography": "^0.5.4",
-		"autoprefixer": "^10.4.7",
-		"eslint": "^8.16.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"postcss": "^8.4.14",
-		"svelte": "^3.44.0",
-		"svelte-preprocess": "^4.10.7",
-		"tailwindcss": "^3.1.6",
-		"vite": "^3.0.0"
-	},
-	"type": "module"
+  "name": "biscuit-web",
+  "version": "1.0.0",
+  "description": "Biscuit docs.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oasisjs/biscuit-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oasisjs/biscuit-docs/issues"
+  },
+  "homepage": "https://github.com/oasisjs/biscuit-docs#readme",
+  "devDependencies": {
+    "typedoc": "^0.23.9",
+    "typedoc-theme-hierarchy": "^3.0.0"
+  }
 }
