@@ -22,7 +22,7 @@
 
 
 <a href="#install-for-node18" id="install-for-node18" style="color: inherit; text-decoration: none;">
-  <h3>Install (for <a href="https://nodejs.org/en/download/">node18</a>)</h3>
+  <h2>Install (for <a href="https://nodejs.org/en/download/">node18</a>)</h2>
 </a>
 <pre><code class="language-sh-session">npm install @biscuitland/core
 yarn add @biscuitland/core
@@ -30,7 +30,7 @@ yarn add @biscuitland/core
 <p>for further reading join our <a href="https://discord.gg/zmuvzzEFz2">Discord</a></p>
 
 <a href="#most-importantly-biscuit-is" id="most-importantly-biscuit-is" style="color: inherit; text-decoration: none;">
-  <h3>Most importantly, biscuit is:</h3>
+  <h2>Most importantly, biscuit is:</h2>
 </a>
 <ul>
 <li>A wrapper to interface the Discord API</li>
@@ -40,7 +40,7 @@ yarn add @biscuitland/core
 that you should not make software that does things it is not supposed to do.</p>
 
 <a href="#why-biscuit" id="why-biscuit" style="color: inherit; text-decoration: none;">
-  <h3>Why biscuit?:</h3>
+  <h2>Why biscuit?:</h2>
 </a>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Unix_philosophy">Minimal</a>, non feature-rich!</li>
@@ -48,13 +48,23 @@ that you should not make software that does things it is not supposed to do.</p>
 </ul>
 
 <a href="#example-bot-tsjs" id="example-bot-tsjs" style="color: inherit; text-decoration: none;">
-  <h3>Example bot (TS/JS)</h3>
+  <h2>Example bot (TS/JS)</h2>
 </a>
-<pre><code class="language-js"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">Session</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;@biscuitland/core&#39;</span><span class="hl-1">;</span><br/><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">GatewayIntents</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;@biscuitland/api-types&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">intents</span><span class="hl-1"> = </span><span class="hl-2">GatewayIntents</span><span class="hl-1">.</span><span class="hl-2">MessageContent</span><span class="hl-1"> | </span><span class="hl-2">GatewayIntents</span><span class="hl-1">.</span><span class="hl-2">Guilds</span><span class="hl-1"> | </span><span class="hl-2">GatewayIntents</span><span class="hl-1">.</span><span class="hl-2">GuildMessages</span><span class="hl-1">;</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">session</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">Session</span><span class="hl-1">({ </span><span class="hl-2">token:</span><span class="hl-1"> </span><span class="hl-3">&#39;your token&#39;</span><span class="hl-1">, </span><span class="hl-2">intents</span><span class="hl-1"> });</span><br/><br/><span class="hl-2">session</span><span class="hl-1">.</span><span class="hl-2">events</span><span class="hl-1">.</span><span class="hl-6">on</span><span class="hl-1">(</span><span class="hl-3">&#39;ready&#39;</span><span class="hl-1">, ({ </span><span class="hl-2">user</span><span class="hl-1"> }) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-6">log</span><span class="hl-1">(</span><span class="hl-3">&#39;Logged in as:&#39;</span><span class="hl-1">, </span><span class="hl-2">user</span><span class="hl-1">.</span><span class="hl-2">username</span><span class="hl-1">);</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-2">session</span><span class="hl-1">.</span><span class="hl-2">events</span><span class="hl-1">.</span><span class="hl-6">on</span><span class="hl-1">(</span><span class="hl-3">&#39;messageCreate&#39;</span><span class="hl-1">, (</span><span class="hl-2">message</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">if</span><span class="hl-1"> (</span><span class="hl-2">message</span><span class="hl-1">.</span><span class="hl-2">content</span><span class="hl-1">.</span><span class="hl-6">startsWith</span><span class="hl-1">(</span><span class="hl-3">&#39;!ping&#39;</span><span class="hl-1">)) {</span><br/><span class="hl-1">        </span><span class="hl-2">message</span><span class="hl-1">.</span><span class="hl-6">reply</span><span class="hl-1">({ </span><span class="hl-2">content:</span><span class="hl-1"> </span><span class="hl-3">&#39;pong!&#39;</span><span class="hl-1"> });</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-2">session</span><span class="hl-1">.</span><span class="hl-6">start</span><span class="hl-1">();</span>
+<pre><code class="language-js"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">ChatInputApplicationCommandBuilder</span><span class="hl-1">, </span><span class="hl-2">Session</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;@biscuitland/core&#39;</span><span class="hl-1">;</span><br/><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">GatewayIntents</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;@biscuitland/api-types&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">session</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">Session</span><span class="hl-1">({ </span><span class="hl-2">token:</span><span class="hl-1"> </span><span class="hl-3">&#39;your token&#39;</span><span class="hl-1">, </span><span class="hl-2">intents:</span><span class="hl-1"> </span><span class="hl-2">GatewayIntents</span><span class="hl-1">.</span><span class="hl-2">Guilds</span><span class="hl-1"> });</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">commands</span><span class="hl-1"> = [</span><br/><span class="hl-1">    </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">ChatInputApplicationCommandBuilder</span><span class="hl-1">()</span><br/><span class="hl-1">        .</span><span class="hl-6">setName</span><span class="hl-1">(</span><span class="hl-3">&#39;ping&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">        .</span><span class="hl-6">setDescription</span><span class="hl-1">(</span><span class="hl-3">&#39;Replys with pong!&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">        .</span><span class="hl-6">toJSON</span><span class="hl-1">(),</span><br/><span class="hl-1">]</span><br/><br/><span class="hl-2">session</span><span class="hl-1">.</span><span class="hl-2">events</span><span class="hl-1">.</span><span class="hl-6">on</span><span class="hl-1">(</span><span class="hl-3">&#39;ready&#39;</span><span class="hl-1">, </span><span class="hl-4">async</span><span class="hl-1"> ({ </span><span class="hl-2">user</span><span class="hl-1"> }) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-6">log</span><span class="hl-1">(</span><span class="hl-3">&#39;Logged in as:&#39;</span><span class="hl-1">, </span><span class="hl-2">user</span><span class="hl-1">.</span><span class="hl-2">username</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-2">session</span><span class="hl-1">.</span><span class="hl-6">upsertApplicationCommands</span><span class="hl-1">(</span><span class="hl-2">commands</span><span class="hl-1">, </span><span class="hl-3">&#39;GUILD_ID&#39;</span><span class="hl-1">);</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-2">session</span><span class="hl-1">.</span><span class="hl-2">events</span><span class="hl-1">.</span><span class="hl-6">on</span><span class="hl-1">(</span><span class="hl-3">&#39;interactionCreate&#39;</span><span class="hl-1">, (</span><span class="hl-2">interaction</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">if</span><span class="hl-1"> (</span><span class="hl-2">interaction</span><span class="hl-1">.</span><span class="hl-6">isCommand</span><span class="hl-1">()) {</span><br/><span class="hl-1">        </span><span class="hl-0">if</span><span class="hl-1"> (</span><span class="hl-2">interaction</span><span class="hl-1">.</span><span class="hl-2">commandName</span><span class="hl-1"> === </span><span class="hl-3">&#39;ping&#39;</span><span class="hl-1">) {</span><br/><span class="hl-1">            </span><span class="hl-2">interaction</span><span class="hl-1">.</span><span class="hl-6">respond</span><span class="hl-1">({ </span><span class="hl-2">with:</span><span class="hl-1"> { </span><span class="hl-2">content:</span><span class="hl-1"> </span><span class="hl-3">&#39;pong!&#39;</span><span class="hl-1"> } });</span><br/><span class="hl-1">        }</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-2">session</span><span class="hl-1">.</span><span class="hl-6">start</span><span class="hl-1">();</span>
 </code></pre>
 
+<a href="#links" id="links" style="color: inherit; text-decoration: none;">
+  <h2>Links</h2>
+</a>
+<ul>
+<li><a href="https://biscuitjs.com/">Website</a></li>
+<li><a href="https://docs.biscuitjs.com/">Documentation</a></li>
+<li><a href="https://discord.gg/evqgTQYqn7">Discord</a></li>
+<li><a href="https://www.npmjs.com/package/@biscuitland/core">core</a> | <a href="https://www.npmjs.com/package/@biscuitland/api-types">api-types</a> | <a href="https://www.npmjs.com/package/@biscuitland/cache">cache</a> | <a href="https://www.npmjs.com/package/@biscuitland/rest">rest</a> | <a href="https://www.npmjs.com/package/@biscuitland/ws">ws</a></li>
+</ul>
+
 <a href="#known-issues" id="known-issues" style="color: inherit; text-decoration: none;">
-  <h3>Known issues:</h3>
+  <h2>Known issues:</h2>
 </a>
 <ul>
 <li>node18 is required to run the library, however --experimental-fetch flag should work on node16+</li>
