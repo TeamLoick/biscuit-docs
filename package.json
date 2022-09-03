@@ -9,7 +9,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"format": "prettier --write .  &&  eslint --fix .",
-		"lint": "prettier --check . && eslint --ignore-path .gitignore ."
+		"lint": "prettier --check . && eslint --ignore-path .gitignore .",
+		"prepare": "husky install"
 	},
 	"repository": {
 		"type": "git",
@@ -23,6 +24,9 @@
 	},
 	"homepage": "https://github.com/oasisjs/biscuit-docs#readme",
 	"devDependencies": {
+		"@commitlint/cli": "^17.1.2",
+		"@commitlint/config-conventional": "^17.1.0",
+		"husky": "^8.0.0",
 		"prettier": "2.7.1",
 		"typedoc": "^0.23.9",
 		"typedoc-theme-hierarchy": "^3.0.0"
