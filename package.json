@@ -1,27 +1,30 @@
 {
-  "name": "biscuit-web",
-  "version": "1.0.0",
-  "description": "Biscuit docs.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oasisjs/biscuit-docs.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oasisjs/biscuit-docs/issues"
-  },
-  "homepage": "https://github.com/oasisjs/biscuit-docs#readme",
-  "devDependencies": {
-    "typedoc": "^0.23.9",
-    "typedoc-theme-hierarchy": "^3.0.0"
-  }
+	"name": "biscuit-web",
+	"version": "1.0.0",
+	"description": "Biscuit docs.",
+	"main": "index.js",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --write .  &&  eslint --fix .",
+		"lint": "prettier --check . && eslint --ignore-path .gitignore ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/oasisjs/biscuit-docs.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/oasisjs/biscuit-docs/issues"
+	},
+	"homepage": "https://github.com/oasisjs/biscuit-docs#readme",
+	"devDependencies": {
+		"prettier": "2.7.1",
+		"typedoc": "^0.23.9",
+		"typedoc-theme-hierarchy": "^3.0.0"
+	}
 }

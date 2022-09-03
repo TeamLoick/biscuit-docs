@@ -1,7 +1,9 @@
 # Biscuit Documentation
+
 Documentation website generated with [typedoc](https://github.com/TypeStrong/typedoc) for the [biscuit library](https://github.com/oasisjs/biscuit).
 
 ## Build
+
 Using commands in the `Makefile`:
 
 ```bash

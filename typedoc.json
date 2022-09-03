@@ -6,4 +6,4 @@
 	"theme": "hierarchy",
 	"tsconfig": "./biscuit/tsconfig.json",
 	"name": "Biscuit Docs"
-  }
+}
