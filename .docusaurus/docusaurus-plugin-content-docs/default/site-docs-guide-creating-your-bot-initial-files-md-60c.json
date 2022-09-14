@@ -11,14 +11,17 @@
   "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Creating your bot/Initial files.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Event handling",
-    "permalink": "/docs/guide/Creating your bot/Event handling"
+    "title": "Getting Started",
+    "permalink": "/docs/intro"
   },
   "next": {
-    "title": "Installing Node.js and discord.js",
-    "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js"
+    "title": "Creating your first commands",
+    "permalink": "/docs/guide/Creating your bot/Creating your first commands"
   }
 }

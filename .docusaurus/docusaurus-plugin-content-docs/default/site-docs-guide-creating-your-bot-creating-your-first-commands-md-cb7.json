@@ -11,14 +11,17 @@
   "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Creating your bot/Creating your first commands.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Command handling",
-    "permalink": "/docs/guide/Creating your bot/Command handling"
+    "title": "Initial files",
+    "permalink": "/docs/guide/Creating your bot/Initial files"
   },
   "next": {
-    "title": "Event handling",
-    "permalink": "/docs/guide/Creating your bot/Event handling"
+    "title": "Command handling",
+    "permalink": "/docs/guide/Creating your bot/Command handling"
   }
 }

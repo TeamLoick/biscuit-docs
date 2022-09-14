@@ -11,7 +11,7 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "Gettin Started",
+        "label": "Getting Started",
         "href": "/docs/intro",
         "docId": "intro"
       },
@@ -29,9 +29,9 @@
             "items": [
               {
                 "type": "link",
-                "label": "Command handling",
-                "href": "/docs/guide/Creating your bot/Command handling",
-                "docId": "guide/Creating your bot/Command handling"
+                "label": "Initial files",
+                "href": "/docs/guide/Creating your bot/Initial files",
+                "docId": "guide/Creating your bot/Initial files"
               },
               {
                 "type": "link",
@@ -41,15 +41,15 @@
               },
               {
                 "type": "link",
-                "label": "Event handling",
-                "href": "/docs/guide/Creating your bot/Event handling",
-                "docId": "guide/Creating your bot/Event handling"
+                "label": "Command handling",
+                "href": "/docs/guide/Creating your bot/Command handling",
+                "docId": "guide/Creating your bot/Command handling"
               },
               {
                 "type": "link",
-                "label": "Initial files",
-                "href": "/docs/guide/Creating your bot/Initial files",
-                "docId": "guide/Creating your bot/Initial files"
+                "label": "Event handling",
+                "href": "/docs/guide/Creating your bot/Event handling",
+                "docId": "guide/Creating your bot/Event handling"
               }
             ]
           },
@@ -116,7 +116,7 @@
     },
     "intro": {
       "id": "intro",
-      "title": "Gettin Started",
+      "title": "Getting Started",
       "description": "A brand new bleeding edge non bloated Discord library",
       "sidebar": "tutorialSidebar"
     }

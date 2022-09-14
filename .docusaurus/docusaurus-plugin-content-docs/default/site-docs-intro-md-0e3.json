@@ -1,7 +1,7 @@
 {
   "unversionedId": "intro",
   "id": "intro",
-  "title": "Gettin Started",
+  "title": "Getting Started",
   "description": "A brand new bleeding edge non bloated Discord library",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Command handling",
-    "permalink": "/docs/guide/Creating your bot/Command handling"
+    "title": "Initial files",
+    "permalink": "/docs/guide/Creating your bot/Initial files"
   }
 }

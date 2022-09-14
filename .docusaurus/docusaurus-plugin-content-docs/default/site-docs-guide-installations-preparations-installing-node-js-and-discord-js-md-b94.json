@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Initial files",
-    "permalink": "/docs/guide/Creating your bot/Initial files"
+    "title": "Event handling",
+    "permalink": "/docs/guide/Creating your bot/Event handling"
   },
   "next": {
     "title": "Setting up a bot application",

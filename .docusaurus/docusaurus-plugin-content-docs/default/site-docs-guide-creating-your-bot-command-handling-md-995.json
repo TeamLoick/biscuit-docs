@@ -14,11 +14,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Gettin Started",
-    "permalink": "/docs/intro"
-  },
-  "next": {
     "title": "Creating your first commands",
     "permalink": "/docs/guide/Creating your bot/Creating your first commands"
+  },
+  "next": {
+    "title": "Event handling",
+    "permalink": "/docs/guide/Creating your bot/Event handling"
   }
 }

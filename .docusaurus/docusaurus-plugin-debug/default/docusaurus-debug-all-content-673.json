@@ -35,12 +35,12 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Gettin Started",
-                "permalink": "/docs/intro"
-              },
-              "next": {
                 "title": "Creating your first commands",
                 "permalink": "/docs/guide/Creating your bot/Creating your first commands"
+              },
+              "next": {
+                "title": "Event handling",
+                "permalink": "/docs/guide/Creating your bot/Event handling"
               }
             },
             {
@@ -56,15 +56,18 @@
               "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Creating your bot/Creating your first commands.md",
               "tags": [],
               "version": "current",
-              "frontMatter": {},
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Command handling",
-                "permalink": "/docs/guide/Creating your bot/Command handling"
+                "title": "Initial files",
+                "permalink": "/docs/guide/Creating your bot/Initial files"
               },
               "next": {
-                "title": "Event handling",
-                "permalink": "/docs/guide/Creating your bot/Event handling"
+                "title": "Command handling",
+                "permalink": "/docs/guide/Creating your bot/Command handling"
               }
             },
             {
@@ -83,12 +86,12 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Creating your first commands",
-                "permalink": "/docs/guide/Creating your bot/Creating your first commands"
+                "title": "Command handling",
+                "permalink": "/docs/guide/Creating your bot/Command handling"
               },
               "next": {
-                "title": "Initial files",
-                "permalink": "/docs/guide/Creating your bot/Initial files"
+                "title": "Installing Node.js and discord.js",
+                "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js"
               }
             },
             {
@@ -104,15 +107,18 @@
               "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Creating your bot/Initial files.md",
               "tags": [],
               "version": "current",
-              "frontMatter": {},
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Event handling",
-                "permalink": "/docs/guide/Creating your bot/Event handling"
+                "title": "Getting Started",
+                "permalink": "/docs/intro"
               },
               "next": {
-                "title": "Installing Node.js and discord.js",
-                "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js"
+                "title": "Creating your first commands",
+                "permalink": "/docs/guide/Creating your bot/Creating your first commands"
               }
             },
             {
@@ -134,8 +140,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Initial files",
-                "permalink": "/docs/guide/Creating your bot/Initial files"
+                "title": "Event handling",
+                "permalink": "/docs/guide/Creating your bot/Event handling"
               },
               "next": {
                 "title": "Setting up a bot application",
@@ -155,7 +161,10 @@
               "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Installations & Preparations/Setting up a bot application.md",
               "tags": [],
               "version": "current",
-              "frontMatter": {},
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Installing Node.js and discord.js",
@@ -165,7 +174,7 @@
             {
               "unversionedId": "intro",
               "id": "intro",
-              "title": "Gettin Started",
+              "title": "Getting Started",
               "description": "A brand new bleeding edge non bloated Discord library",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
@@ -181,8 +190,8 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "Command handling",
-                "permalink": "/docs/guide/Creating your bot/Command handling"
+                "title": "Initial files",
+                "permalink": "/docs/guide/Creating your bot/Initial files"
               }
             }
           ],
@@ -207,7 +216,7 @@
                     "items": [
                       {
                         "type": "doc",
-                        "id": "guide/Creating your bot/Command handling"
+                        "id": "guide/Creating your bot/Initial files"
                       },
                       {
                         "type": "doc",
@@ -215,11 +224,11 @@
                       },
                       {
                         "type": "doc",
-                        "id": "guide/Creating your bot/Event handling"
+                        "id": "guide/Creating your bot/Command handling"
                       },
                       {
                         "type": "doc",
-                        "id": "guide/Creating your bot/Initial files"
+                        "id": "guide/Creating your bot/Event handling"
                       }
                     ]
                   },

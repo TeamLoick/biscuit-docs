@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Gettin Started
+# Getting Started
 
 A brand new bleeding edge non bloated Discord library
 

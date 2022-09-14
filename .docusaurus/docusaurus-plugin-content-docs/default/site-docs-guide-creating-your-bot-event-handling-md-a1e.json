@@ -14,11 +14,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Creating your first commands",
-    "permalink": "/docs/guide/Creating your bot/Creating your first commands"
+    "title": "Command handling",
+    "permalink": "/docs/guide/Creating your bot/Command handling"
   },
   "next": {
-    "title": "Initial files",
-    "permalink": "/docs/guide/Creating your bot/Initial files"
+    "title": "Installing Node.js and discord.js",
+    "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js"
   }
 }

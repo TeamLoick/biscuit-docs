@@ -7,3 +7,4 @@ biscuit/packages/*/dist
 .env.*
 !.env.example
 package-lock.json
+/.docusaurus
