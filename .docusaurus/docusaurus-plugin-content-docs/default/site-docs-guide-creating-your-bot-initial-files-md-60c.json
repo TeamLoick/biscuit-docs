@@ -1,0 +1,24 @@
+{
+  "unversionedId": "guide/Creating your bot/Initial files",
+  "id": "guide/Creating your bot/Initial files",
+  "title": "Initial files",
+  "description": "",
+  "source": "@site/docs/guide/Creating your bot/Initial files.md",
+  "sourceDirName": "guide/Creating your bot",
+  "slug": "/guide/Creating your bot/Initial files",
+  "permalink": "/docs/guide/Creating your bot/Initial files",
+  "draft": false,
+  "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Creating your bot/Initial files.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Event handling",
+    "permalink": "/docs/guide/Creating your bot/Event handling"
+  },
+  "next": {
+    "title": "Installing Node.js and discord.js",
+    "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js"
+  }
+}

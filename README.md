@@ -1,13 +1,41 @@
-# Biscuit Documentation
+# Website
 
-Documentation website generated with [typedoc](https://github.com/TypeStrong/typedoc) for the [biscuit library](https://github.com/oasisjs/biscuit).
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Build
+### Installation
 
-Using commands in the `Makefile`:
-
-```bash
-	make build
+```
+$ yarn
 ```
 
-**Recommended:** `make update` before `make build` to ensure that the latest version of the library is used. Also, once the changes to the `docs/` folder are generated, it's preferable that they're sent in a single "Build" (or similar) commit, separated from the rest of the changes.
+### Local Development
+
+```
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

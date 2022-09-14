@@ -1,0 +1,27 @@
+{
+  "unversionedId": "guide/Installations & Preparations/Installing Node.js and discord.js",
+  "id": "guide/Installations & Preparations/Installing Node.js and discord.js",
+  "title": "Installing Node.js and discord.js",
+  "description": "",
+  "source": "@site/docs/guide/Installations & Preparations/Installing Node.js and discord.js.md",
+  "sourceDirName": "guide/Installations & Preparations",
+  "slug": "/guide/Installations & Preparations/Installing Node.js and discord.js",
+  "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js",
+  "draft": false,
+  "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Installations & Preparations/Installing Node.js and discord.js.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Initial files",
+    "permalink": "/docs/guide/Creating your bot/Initial files"
+  },
+  "next": {
+    "title": "Setting up a bot application",
+    "permalink": "/docs/guide/Installations & Preparations/Setting up a bot application"
+  }
+}

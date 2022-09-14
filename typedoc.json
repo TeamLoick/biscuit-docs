@@ -1,9 +1,0 @@
-{
-	"entryPoints": ["packages"],
-	"entryPointStrategy": "Expand",
-	"out": "docs",
-	"plugin": ["typedoc-theme-hierarchy"],
-	"theme": "hierarchy",
-	"tsconfig": "./biscuit/tsconfig.json",
-	"name": "Biscuit Docs"
-}

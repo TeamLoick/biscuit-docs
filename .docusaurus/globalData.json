@@ -1,0 +1,63 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "guide/Creating your bot/Command handling",
+              "path": "/docs/guide/Creating your bot/Command handling",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guide/Creating your bot/Creating your first commands",
+              "path": "/docs/guide/Creating your bot/Creating your first commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guide/Creating your bot/Event handling",
+              "path": "/docs/guide/Creating your bot/Event handling",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guide/Creating your bot/Initial files",
+              "path": "/docs/guide/Creating your bot/Initial files",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guide/Installations & Preparations/Installing Node.js and discord.js",
+              "path": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guide/Installations & Preparations/Setting up a bot application",
+              "path": "/docs/guide/Installations & Preparations/Setting up a bot application",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

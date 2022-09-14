@@ -1,0 +1,20 @@
+{
+  "unversionedId": "guide/Installations & Preparations/Setting up a bot application",
+  "id": "guide/Installations & Preparations/Setting up a bot application",
+  "title": "Setting up a bot application",
+  "description": "",
+  "source": "@site/docs/guide/Installations & Preparations/Setting up a bot application.md",
+  "sourceDirName": "guide/Installations & Preparations",
+  "slug": "/guide/Installations & Preparations/Setting up a bot application",
+  "permalink": "/docs/guide/Installations & Preparations/Setting up a bot application",
+  "draft": false,
+  "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Installations & Preparations/Setting up a bot application.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installing Node.js and discord.js",
+    "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js"
+  }
+}
