@@ -44,41 +44,41 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '0ab'),
+    component: ComponentCreator('/docs', 'dfc'),
     routes: [
       {
-        path: '/docs/guide/Creating your bot/Command handling',
-        component: ComponentCreator('/docs/guide/Creating your bot/Command handling', '15d'),
+        path: '/docs/Guide/Creating your bot/Command handling',
+        component: ComponentCreator('/docs/Guide/Creating your bot/Command handling', 'a78'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/guide/Creating your bot/Creating your first commands',
-        component: ComponentCreator('/docs/guide/Creating your bot/Creating your first commands', '9a5'),
+        path: '/docs/Guide/Creating your bot/Creating your first commands',
+        component: ComponentCreator('/docs/Guide/Creating your bot/Creating your first commands', '927'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/guide/Creating your bot/Event handling',
-        component: ComponentCreator('/docs/guide/Creating your bot/Event handling', '08f'),
+        path: '/docs/Guide/Creating your bot/Event handling',
+        component: ComponentCreator('/docs/Guide/Creating your bot/Event handling', '933'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/guide/Creating your bot/Initial files',
-        component: ComponentCreator('/docs/guide/Creating your bot/Initial files', 'c69'),
+        path: '/docs/Guide/Creating your bot/Initial files',
+        component: ComponentCreator('/docs/Guide/Creating your bot/Initial files', 'bab'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/guide/Installations & Preparations/Installing Node.js and discord.js',
-        component: ComponentCreator('/docs/guide/Installations & Preparations/Installing Node.js and discord.js', '64d'),
+        path: '/docs/Guide/Installations & Preparations/Installing Node.js and discord.js',
+        component: ComponentCreator('/docs/Guide/Installations & Preparations/Installing Node.js and discord.js', 'a2e'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/guide/Installations & Preparations/Setting up a bot application',
-        component: ComponentCreator('/docs/guide/Installations & Preparations/Setting up a bot application', 'e04'),
+        path: '/docs/Guide/Installations & Preparations/Setting up a bot application',
+        component: ComponentCreator('/docs/Guide/Installations & Preparations/Setting up a bot application', 'da0'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

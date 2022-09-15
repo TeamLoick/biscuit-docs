@@ -1,6 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
+const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -54,7 +54,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Biscuit',
+        title: 'Biscuitjs',
         logo: {
           alt: 'Biscuitjs',
           src: 'img/logo.svg',
@@ -64,9 +64,15 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Getting Started',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            type: 'doc',
+            docId:
+              'Guide/Installations & Preparations/Installing Node.js and discord.js',
+            position: 'left',
+            label: 'Guide',
+          },
           {
             href: 'https://github.com/oasisjs',
             label: 'GitHub',
@@ -117,6 +123,7 @@ const config = {
       },
       prism: {
         theme: darkCodeTheme,
+        darkTheme: darkCodeTheme,
       },
     }),
 };

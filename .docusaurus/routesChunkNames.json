@@ -49,36 +49,36 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-0ab": {
+  "/docs-dfc": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docsb-0-e-b4f"
     },
     "versionMetadata": "versionMetadata---docs-935-398"
   },
-  "/docs/guide/Creating your bot/Command handling-15d": {
+  "/docs/Guide/Creating your bot/Command handling-a78": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guide-creating-your-bot-command-handling-995-899"
+    "content": "content---docs-guide-creating-your-bot-command-handling-809-6f7"
   },
-  "/docs/guide/Creating your bot/Creating your first commands-9a5": {
+  "/docs/Guide/Creating your bot/Creating your first commands-927": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guide-creating-your-bot-creating-your-first-commandscb-7-28d"
+    "content": "content---docs-guide-creating-your-bot-creating-your-first-commands-198-b2e"
   },
-  "/docs/guide/Creating your bot/Event handling-08f": {
+  "/docs/Guide/Creating your bot/Event handling-933": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guide-creating-your-bot-event-handlinga-1-e-73b"
+    "content": "content---docs-guide-creating-your-bot-event-handlingf-13-6e4"
   },
-  "/docs/guide/Creating your bot/Initial files-c69": {
+  "/docs/Guide/Creating your bot/Initial files-bab": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guide-creating-your-bot-initial-files-60-c-b85"
+    "content": "content---docs-guide-creating-your-bot-initial-filesd-6-b-b84"
   },
-  "/docs/guide/Installations & Preparations/Installing Node.js and discord.js-64d": {
+  "/docs/Guide/Installations & Preparations/Installing Node.js and discord.js-a2e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guide-installations-preparations-installing-node-js-and-discord-jsb-94-38f"
+    "content": "content---docs-guide-installations-preparations-installing-node-js-and-discord-js-1-c-1-6d8"
   },
-  "/docs/guide/Installations & Preparations/Setting up a bot application-e04": {
+  "/docs/Guide/Installations & Preparations/Setting up a bot application-da0": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guide-installations-preparations-setting-up-a-bot-applicationd-02-1ba"
+    "content": "content---docs-guide-installations-preparations-setting-up-a-bot-applicationd-33-c92"
   },
   "/docs/intro-aed": {
     "__comp": "__comp---theme-doc-item-178-a40",

@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Initial files",
-    "permalink": "/docs/guide/Creating your bot/Initial files"
+    "title": "Installing Node.js and discord.js",
+    "permalink": "/docs/Guide/Installations & Preparations/Installing Node.js and discord.js"
   }
 }

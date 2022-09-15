@@ -20,40 +20,40 @@
           "contentPathLocalized": "D:\\projects\\loick.team\\colabs\\biscuit\\biscuit-docs\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "docs": [
             {
-              "unversionedId": "guide/Creating your bot/Command handling",
-              "id": "guide/Creating your bot/Command handling",
+              "unversionedId": "Guide/Creating your bot/Command handling",
+              "id": "Guide/Creating your bot/Command handling",
               "title": "Command handling",
               "description": "",
-              "source": "@site/docs/guide/Creating your bot/Command handling.md",
-              "sourceDirName": "guide/Creating your bot",
-              "slug": "/guide/Creating your bot/Command handling",
-              "permalink": "/docs/guide/Creating your bot/Command handling",
+              "source": "@site/docs/Guide/Creating your bot/Command handling.md",
+              "sourceDirName": "Guide/Creating your bot",
+              "slug": "/Guide/Creating your bot/Command handling",
+              "permalink": "/docs/Guide/Creating your bot/Command handling",
               "draft": false,
-              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Creating your bot/Command handling.md",
+              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/Guide/Creating your bot/Command handling.md",
               "tags": [],
               "version": "current",
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Creating your first commands",
-                "permalink": "/docs/guide/Creating your bot/Creating your first commands"
+                "permalink": "/docs/Guide/Creating your bot/Creating your first commands"
               },
               "next": {
                 "title": "Event handling",
-                "permalink": "/docs/guide/Creating your bot/Event handling"
+                "permalink": "/docs/Guide/Creating your bot/Event handling"
               }
             },
             {
-              "unversionedId": "guide/Creating your bot/Creating your first commands",
-              "id": "guide/Creating your bot/Creating your first commands",
+              "unversionedId": "Guide/Creating your bot/Creating your first commands",
+              "id": "Guide/Creating your bot/Creating your first commands",
               "title": "Creating your first commands",
               "description": "",
-              "source": "@site/docs/guide/Creating your bot/Creating your first commands.md",
-              "sourceDirName": "guide/Creating your bot",
-              "slug": "/guide/Creating your bot/Creating your first commands",
-              "permalink": "/docs/guide/Creating your bot/Creating your first commands",
+              "source": "@site/docs/Guide/Creating your bot/Creating your first commands.md",
+              "sourceDirName": "Guide/Creating your bot",
+              "slug": "/Guide/Creating your bot/Creating your first commands",
+              "permalink": "/docs/Guide/Creating your bot/Creating your first commands",
               "draft": false,
-              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Creating your bot/Creating your first commands.md",
+              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/Guide/Creating your bot/Creating your first commands.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
@@ -63,48 +63,71 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Initial files",
-                "permalink": "/docs/guide/Creating your bot/Initial files"
+                "permalink": "/docs/Guide/Creating your bot/Initial files"
               },
               "next": {
                 "title": "Command handling",
-                "permalink": "/docs/guide/Creating your bot/Command handling"
+                "permalink": "/docs/Guide/Creating your bot/Command handling"
               }
             },
             {
-              "unversionedId": "guide/Creating your bot/Event handling",
-              "id": "guide/Creating your bot/Event handling",
+              "unversionedId": "Guide/Creating your bot/Event handling",
+              "id": "Guide/Creating your bot/Event handling",
               "title": "Event handling",
               "description": "",
-              "source": "@site/docs/guide/Creating your bot/Event handling.md",
-              "sourceDirName": "guide/Creating your bot",
-              "slug": "/guide/Creating your bot/Event handling",
-              "permalink": "/docs/guide/Creating your bot/Event handling",
+              "source": "@site/docs/Guide/Creating your bot/Event handling.md",
+              "sourceDirName": "Guide/Creating your bot",
+              "slug": "/Guide/Creating your bot/Event handling",
+              "permalink": "/docs/Guide/Creating your bot/Event handling",
               "draft": false,
-              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Creating your bot/Event handling.md",
+              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/Guide/Creating your bot/Event handling.md",
               "tags": [],
               "version": "current",
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Command handling",
-                "permalink": "/docs/guide/Creating your bot/Command handling"
-              },
-              "next": {
-                "title": "Installing Node.js and discord.js",
-                "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js"
+                "permalink": "/docs/Guide/Creating your bot/Command handling"
               }
             },
             {
-              "unversionedId": "guide/Creating your bot/Initial files",
-              "id": "guide/Creating your bot/Initial files",
+              "unversionedId": "Guide/Creating your bot/Initial files",
+              "id": "Guide/Creating your bot/Initial files",
               "title": "Initial files",
               "description": "",
-              "source": "@site/docs/guide/Creating your bot/Initial files.md",
-              "sourceDirName": "guide/Creating your bot",
-              "slug": "/guide/Creating your bot/Initial files",
-              "permalink": "/docs/guide/Creating your bot/Initial files",
+              "source": "@site/docs/Guide/Creating your bot/Initial files.md",
+              "sourceDirName": "Guide/Creating your bot",
+              "slug": "/Guide/Creating your bot/Initial files",
+              "permalink": "/docs/Guide/Creating your bot/Initial files",
               "draft": false,
-              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Creating your bot/Initial files.md",
+              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/Guide/Creating your bot/Initial files.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Setting up a bot application",
+                "permalink": "/docs/Guide/Installations & Preparations/Setting up a bot application"
+              },
+              "next": {
+                "title": "Creating your first commands",
+                "permalink": "/docs/Guide/Creating your bot/Creating your first commands"
+              }
+            },
+            {
+              "unversionedId": "Guide/Installations & Preparations/Installing Node.js and discord.js",
+              "id": "Guide/Installations & Preparations/Installing Node.js and discord.js",
+              "title": "Installing Node.js and discord.js",
+              "description": "",
+              "source": "@site/docs/Guide/Installations & Preparations/Installing Node.js and discord.js.md",
+              "sourceDirName": "Guide/Installations & Preparations",
+              "slug": "/Guide/Installations & Preparations/Installing Node.js and discord.js",
+              "permalink": "/docs/Guide/Installations & Preparations/Installing Node.js and discord.js",
+              "draft": false,
+              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/Guide/Installations & Preparations/Installing Node.js and discord.js.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
@@ -117,48 +140,21 @@
                 "permalink": "/docs/intro"
               },
               "next": {
-                "title": "Creating your first commands",
-                "permalink": "/docs/guide/Creating your bot/Creating your first commands"
-              }
-            },
-            {
-              "unversionedId": "guide/Installations & Preparations/Installing Node.js and discord.js",
-              "id": "guide/Installations & Preparations/Installing Node.js and discord.js",
-              "title": "Installing Node.js and discord.js",
-              "description": "",
-              "source": "@site/docs/guide/Installations & Preparations/Installing Node.js and discord.js.md",
-              "sourceDirName": "guide/Installations & Preparations",
-              "slug": "/guide/Installations & Preparations/Installing Node.js and discord.js",
-              "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js",
-              "draft": false,
-              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Installations & Preparations/Installing Node.js and discord.js.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "sidebar_position": 2
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Event handling",
-                "permalink": "/docs/guide/Creating your bot/Event handling"
-              },
-              "next": {
                 "title": "Setting up a bot application",
-                "permalink": "/docs/guide/Installations & Preparations/Setting up a bot application"
+                "permalink": "/docs/Guide/Installations & Preparations/Setting up a bot application"
               }
             },
             {
-              "unversionedId": "guide/Installations & Preparations/Setting up a bot application",
-              "id": "guide/Installations & Preparations/Setting up a bot application",
+              "unversionedId": "Guide/Installations & Preparations/Setting up a bot application",
+              "id": "Guide/Installations & Preparations/Setting up a bot application",
               "title": "Setting up a bot application",
               "description": "",
-              "source": "@site/docs/guide/Installations & Preparations/Setting up a bot application.md",
-              "sourceDirName": "guide/Installations & Preparations",
-              "slug": "/guide/Installations & Preparations/Setting up a bot application",
-              "permalink": "/docs/guide/Installations & Preparations/Setting up a bot application",
+              "source": "@site/docs/Guide/Installations & Preparations/Setting up a bot application.md",
+              "sourceDirName": "Guide/Installations & Preparations",
+              "slug": "/Guide/Installations & Preparations/Setting up a bot application",
+              "permalink": "/docs/Guide/Installations & Preparations/Setting up a bot application",
               "draft": false,
-              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/guide/Installations & Preparations/Setting up a bot application.md",
+              "editUrl": "https://github.com/oasisjs/biscuit-docs/tree/main/docs/Guide/Installations & Preparations/Setting up a bot application.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
@@ -168,7 +164,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Installing Node.js and discord.js",
-                "permalink": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js"
+                "permalink": "/docs/Guide/Installations & Preparations/Installing Node.js and discord.js"
+              },
+              "next": {
+                "title": "Initial files",
+                "permalink": "/docs/Guide/Creating your bot/Initial files"
               }
             },
             {
@@ -190,8 +190,8 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "Initial files",
-                "permalink": "/docs/guide/Creating your bot/Initial files"
+                "title": "Installing Node.js and discord.js",
+                "permalink": "/docs/Guide/Installations & Preparations/Installing Node.js and discord.js"
               }
             }
           ],
@@ -204,49 +204,49 @@
               },
               {
                 "type": "category",
-                "label": "guide",
+                "label": "Guide",
                 "collapsible": true,
-                "collapsed": true,
+                "collapsed": false,
                 "items": [
                   {
                     "type": "category",
-                    "label": "Creating your bot",
-                    "collapsible": true,
-                    "collapsed": true,
+                    "label": "Installations & Preparations",
+                    "collapsed": false,
                     "items": [
                       {
                         "type": "doc",
-                        "id": "guide/Creating your bot/Initial files"
+                        "id": "Guide/Installations & Preparations/Installing Node.js and discord.js"
                       },
                       {
                         "type": "doc",
-                        "id": "guide/Creating your bot/Creating your first commands"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "guide/Creating your bot/Command handling"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "guide/Creating your bot/Event handling"
+                        "id": "Guide/Installations & Preparations/Setting up a bot application"
                       }
-                    ]
+                    ],
+                    "collapsible": true
                   },
                   {
                     "type": "category",
-                    "label": "Installations & Preparations",
-                    "collapsible": true,
-                    "collapsed": true,
+                    "label": "Creating your bot",
+                    "collapsed": false,
                     "items": [
                       {
                         "type": "doc",
-                        "id": "guide/Installations & Preparations/Installing Node.js and discord.js"
+                        "id": "Guide/Creating your bot/Initial files"
                       },
                       {
                         "type": "doc",
-                        "id": "guide/Installations & Preparations/Setting up a bot application"
+                        "id": "Guide/Creating your bot/Creating your first commands"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Guide/Creating your bot/Command handling"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Guide/Creating your bot/Event handling"
                       }
-                    ]
+                    ],
+                    "collapsible": true
                   }
                 ]
               }

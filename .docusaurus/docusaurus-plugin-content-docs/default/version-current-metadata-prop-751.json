@@ -17,99 +17,99 @@
       },
       {
         "type": "category",
-        "label": "guide",
+        "label": "Guide",
         "collapsible": true,
-        "collapsed": true,
+        "collapsed": false,
         "items": [
           {
             "type": "category",
-            "label": "Creating your bot",
-            "collapsible": true,
-            "collapsed": true,
-            "items": [
-              {
-                "type": "link",
-                "label": "Initial files",
-                "href": "/docs/guide/Creating your bot/Initial files",
-                "docId": "guide/Creating your bot/Initial files"
-              },
-              {
-                "type": "link",
-                "label": "Creating your first commands",
-                "href": "/docs/guide/Creating your bot/Creating your first commands",
-                "docId": "guide/Creating your bot/Creating your first commands"
-              },
-              {
-                "type": "link",
-                "label": "Command handling",
-                "href": "/docs/guide/Creating your bot/Command handling",
-                "docId": "guide/Creating your bot/Command handling"
-              },
-              {
-                "type": "link",
-                "label": "Event handling",
-                "href": "/docs/guide/Creating your bot/Event handling",
-                "docId": "guide/Creating your bot/Event handling"
-              }
-            ]
-          },
-          {
-            "type": "category",
             "label": "Installations & Preparations",
-            "collapsible": true,
-            "collapsed": true,
+            "collapsed": false,
             "items": [
               {
                 "type": "link",
                 "label": "Installing Node.js and discord.js",
-                "href": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js",
-                "docId": "guide/Installations & Preparations/Installing Node.js and discord.js"
+                "href": "/docs/Guide/Installations & Preparations/Installing Node.js and discord.js",
+                "docId": "Guide/Installations & Preparations/Installing Node.js and discord.js"
               },
               {
                 "type": "link",
                 "label": "Setting up a bot application",
-                "href": "/docs/guide/Installations & Preparations/Setting up a bot application",
-                "docId": "guide/Installations & Preparations/Setting up a bot application"
+                "href": "/docs/Guide/Installations & Preparations/Setting up a bot application",
+                "docId": "Guide/Installations & Preparations/Setting up a bot application"
               }
-            ]
+            ],
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Creating your bot",
+            "collapsed": false,
+            "items": [
+              {
+                "type": "link",
+                "label": "Initial files",
+                "href": "/docs/Guide/Creating your bot/Initial files",
+                "docId": "Guide/Creating your bot/Initial files"
+              },
+              {
+                "type": "link",
+                "label": "Creating your first commands",
+                "href": "/docs/Guide/Creating your bot/Creating your first commands",
+                "docId": "Guide/Creating your bot/Creating your first commands"
+              },
+              {
+                "type": "link",
+                "label": "Command handling",
+                "href": "/docs/Guide/Creating your bot/Command handling",
+                "docId": "Guide/Creating your bot/Command handling"
+              },
+              {
+                "type": "link",
+                "label": "Event handling",
+                "href": "/docs/Guide/Creating your bot/Event handling",
+                "docId": "Guide/Creating your bot/Event handling"
+              }
+            ],
+            "collapsible": true
           }
         ]
       }
     ]
   },
   "docs": {
-    "guide/Creating your bot/Command handling": {
-      "id": "guide/Creating your bot/Command handling",
+    "Guide/Creating your bot/Command handling": {
+      "id": "Guide/Creating your bot/Command handling",
       "title": "Command handling",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
-    "guide/Creating your bot/Creating your first commands": {
-      "id": "guide/Creating your bot/Creating your first commands",
+    "Guide/Creating your bot/Creating your first commands": {
+      "id": "Guide/Creating your bot/Creating your first commands",
       "title": "Creating your first commands",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
-    "guide/Creating your bot/Event handling": {
-      "id": "guide/Creating your bot/Event handling",
+    "Guide/Creating your bot/Event handling": {
+      "id": "Guide/Creating your bot/Event handling",
       "title": "Event handling",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
-    "guide/Creating your bot/Initial files": {
-      "id": "guide/Creating your bot/Initial files",
+    "Guide/Creating your bot/Initial files": {
+      "id": "Guide/Creating your bot/Initial files",
       "title": "Initial files",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
-    "guide/Installations & Preparations/Installing Node.js and discord.js": {
-      "id": "guide/Installations & Preparations/Installing Node.js and discord.js",
+    "Guide/Installations & Preparations/Installing Node.js and discord.js": {
+      "id": "Guide/Installations & Preparations/Installing Node.js and discord.js",
       "title": "Installing Node.js and discord.js",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
-    "guide/Installations & Preparations/Setting up a bot application": {
-      "id": "guide/Installations & Preparations/Setting up a bot application",
+    "Guide/Installations & Preparations/Setting up a bot application": {
+      "id": "Guide/Installations & Preparations/Setting up a bot application",
       "title": "Setting up a bot application",
       "description": "",
       "sidebar": "tutorialSidebar"

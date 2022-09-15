@@ -11,33 +11,33 @@
           "mainDocId": "intro",
           "docs": [
             {
-              "id": "guide/Creating your bot/Command handling",
-              "path": "/docs/guide/Creating your bot/Command handling",
+              "id": "Guide/Creating your bot/Command handling",
+              "path": "/docs/Guide/Creating your bot/Command handling",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "guide/Creating your bot/Creating your first commands",
-              "path": "/docs/guide/Creating your bot/Creating your first commands",
+              "id": "Guide/Creating your bot/Creating your first commands",
+              "path": "/docs/Guide/Creating your bot/Creating your first commands",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "guide/Creating your bot/Event handling",
-              "path": "/docs/guide/Creating your bot/Event handling",
+              "id": "Guide/Creating your bot/Event handling",
+              "path": "/docs/Guide/Creating your bot/Event handling",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "guide/Creating your bot/Initial files",
-              "path": "/docs/guide/Creating your bot/Initial files",
+              "id": "Guide/Creating your bot/Initial files",
+              "path": "/docs/Guide/Creating your bot/Initial files",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "guide/Installations & Preparations/Installing Node.js and discord.js",
-              "path": "/docs/guide/Installations & Preparations/Installing Node.js and discord.js",
+              "id": "Guide/Installations & Preparations/Installing Node.js and discord.js",
+              "path": "/docs/Guide/Installations & Preparations/Installing Node.js and discord.js",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "guide/Installations & Preparations/Setting up a bot application",
-              "path": "/docs/guide/Installations & Preparations/Setting up a bot application",
+              "id": "Guide/Installations & Preparations/Setting up a bot application",
+              "path": "/docs/Guide/Installations & Preparations/Setting up a bot application",
               "sidebar": "tutorialSidebar"
             },
             {
